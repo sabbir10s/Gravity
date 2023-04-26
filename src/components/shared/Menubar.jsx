@@ -68,10 +68,10 @@ const Menubar = ({visible, handleCloseMenubar}) => {
                                 <span className="text-[24px]">gravity@ltd.co</span>
                                 <div className="bg-white w-1/4 group-hover:w-full duration-300 h-[2px]"></div>
                             </button>
-                            <div className="flex items-center gap-2 mt-4 pb-14">
-                                <img src={twitter} alt="twitter" />
-                                <img src={facebook} alt="facebook" />
-                                <img src={linkedIn} alt="linkedIn" />
+                            <div className="flex items-center gap-[30px] mt-4 pb-14">
+                                <a href="#"><img src={twitter} alt="twitter" /></a>
+                                <a href="#"><img src={facebook} alt="facebook" /></a>
+                                <a href="#"><img src={linkedIn} alt="linkedIn" /></a>
                             </div>
                         </div>
                     </div>
