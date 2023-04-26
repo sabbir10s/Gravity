@@ -1,6 +1,6 @@
 import {AiOutlineClose} from "react-icons/ai";
 import {Link} from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/img/logo.png'
 import twitter from '../../assets/icon/twitter.png'
 import facebook from '../../assets/icon/facebook.png'
 import linkedIn from '../../assets/icon/linkedIn.png'

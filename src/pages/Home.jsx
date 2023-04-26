@@ -1,5 +1,9 @@
+import Hero from "../components/screen/Hero";
+
 const Home = () => {
-  return <div className="text-primary-500">Home</div>;
+  return <div>
+    <Hero/>
+  </div>;
 };
 
 export default Home;
