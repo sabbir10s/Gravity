@@ -1,6 +1,6 @@
 const OurWork = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-[#fafcfe]">
             <div className="container py-[60px]">
                 <h2 className=" text-secondary-800 text-[32px] md:text-[36px] lg:text-[44px] font-semibold">What we do?</h2>
                 <div>
