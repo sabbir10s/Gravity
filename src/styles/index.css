@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* loader */
-.loading {
+/* .loading {
   --speed-of-animation: 0.9s;
   --gap: 6px;
   --first-color: #4c86f9;
@@ -84,3 +84,4 @@
     transform: scaleY(1);
   }
 }
+ */
