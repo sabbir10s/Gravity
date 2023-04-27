@@ -4,7 +4,7 @@ const Vision = () => {
   return (
     <section className="grid gap-8 grid-cols-1 md:grid-cols-2 h-full lg:h-[947px] container text-secondary-800 ">
       <div className=" pt-8 lg:pt-28 order-2 md:order-none">
-        <h2 className="text-4xl md:text-5xl lg:text-[77px] font-semibold">Vision</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold">Vision</h2>
         <div className="w-20 h-1 my-5 bg-primary-600"></div>
         <p className="text-2xl md:text-[28px] lg:text-[32px] md:leading-relaxed lg:leading-[48px] ">
           Gravity is a dynamic digital agency that specializes in delivering cutting-edge solutions for businesses of all sizes. With a team of
