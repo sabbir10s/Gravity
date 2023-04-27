@@ -1,12 +1,12 @@
-import eximBank from '../../assets/img/exim bank logo.png'
-import ai2 from '../../assets/img/a2i.png'
-import chew from '../../assets/img/chew.png'
-import may from '../../assets/img/may.png'
-import bosphorus from '../../assets/img/bosphorus.png'
-import tappware from '../../assets/img/tappware.png'
-import jobhirehub from '../../assets/img/jobhirehub.png'
-import streamlare from '../../assets/img/streamlare.png'
-import '../../styles/FeaturedClients.css'
+import eximBank from '../../../assets/img/exim bank logo.png'
+import ai2 from '../../../assets/img/a2i.png'
+import chew from '../../../assets/img/chew.png'
+import may from '../../../assets/img/may.png'
+import bosphorus from '../../../assets/img/bosphorus.png'
+import tappware from '../../../assets/img/tappware.png'
+import jobhirehub from '../../../assets/img/jobhirehub.png'
+import streamlare from '../../../assets/img/streamlare.png'
+import '../../../styles/FeaturedClients.css'
 
 const FeaturedClients = () => {
     return (

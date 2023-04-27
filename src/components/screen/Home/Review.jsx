@@ -1,5 +1,5 @@
-import jobhirehub from '../../assets/img/jobhirehub.png'
-import '../../styles/review.css'
+import jobhirehub from '../../../assets/img/jobhirehub.png'
+import '../../../styles/review.css'
 const Review = () => {
     return (
         <div className="bg-[#fafcfe]">

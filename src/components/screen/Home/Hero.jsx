@@ -1,5 +1,5 @@
-import logo from '../../assets/img/video logo.png'
-import play from '../../assets/icon/Play.png'
+import logo from '../../../assets/img/video logo.png'
+import play from '../../../assets/icon/Play.png'
 const Hero = () => {
   return <div className="bg-primary-800 text-white py-[52px]">
     <div className="container">
