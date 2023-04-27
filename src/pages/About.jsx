@@ -1,4 +1,5 @@
 import AboutSlide from "../components/screen/About/AboutSlide";
+import Vision from "../components/screen/About/Vision";
 import EveryHero from "../components/shared/EveryHero";
 
 const About = () => {
@@ -8,8 +9,8 @@ const About = () => {
         <EveryHero>We make brands that demand attention! Loud, proud, and impossible to ignore.</EveryHero>
         <AboutSlide />
       </section>
-      <section>
-        
+      <section className="overflow-hidden">
+        <Vision />
       </section>
     </div>
   );

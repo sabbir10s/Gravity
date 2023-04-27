@@ -15,7 +15,7 @@ const AboutSlide = () => {
   return (
     <div>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={10}
         slidesPerView={1}
         rewind={true}
         autoplay={{
