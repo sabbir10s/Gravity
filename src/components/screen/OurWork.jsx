@@ -2,7 +2,7 @@ const OurWork = () => {
     return (
         <div className="bg-[#fafcfe]">
             <div className="container py-[60px]">
-                <h2 className=" text-secondary-800 text-[32px] md:text-[36px] lg:text-[44px] font-semibold">What we do?</h2>
+                <h2 className=" text-secondary-800 text-[32px] md:text-[36px] lg:text-[64px] font-semibold">What we do?</h2>
                 <div>
                     <div className="py-[24px] lg:mt-[48px] lg:border-t border-[#EDF0F2] lg:grid grid-cols-2">
                         <h3 className="text-secondary-800 text-[24px] lg:text-[28px] font-medium">Strategy</h3>
