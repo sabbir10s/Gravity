@@ -1,5 +1,8 @@
 import AboutSlide from "../components/screen/About/AboutSlide";
+import Process from "../components/screen/About/Process";
 import Vision from "../components/screen/About/Vision";
+import FeaturedClients from "../components/screen/FeaturedClients";
+import Review from "../components/screen/Review";
 import EveryHero from "../components/shared/EveryHero";
 
 const About = () => {
@@ -11,6 +14,13 @@ const About = () => {
       </section>
       <section className="overflow-hidden">
         <Vision />
+      </section>
+      <section className="py-36">
+        <Process />
+      </section>
+      <section>
+        <FeaturedClients />
+        <Review />
       </section>
     </div>
   );
