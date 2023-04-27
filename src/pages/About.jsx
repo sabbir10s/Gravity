@@ -15,7 +15,7 @@ const About = () => {
       <section className="overflow-hidden">
         <Vision />
       </section>
-      <section className="py-36">
+      <section className=" py-12 lg:py-36">
         <Process />
       </section>
       <section>
