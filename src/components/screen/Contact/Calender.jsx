@@ -6,7 +6,7 @@ const Calender = () => {
                     <br/>
                     brand with a purpose.</h2>
                 <p className="text-center text-[16px] md:text-[20px]">Discover the power of purposeful branding
-                    with Gravity - book a meeting with us today.</p>
+                    with Gravity - book a meeting with us today.</p> 
 
                 <div
                     className="mt-[32px] lg:mt-[50px] calendly-inline-widget min-w-[300px] h-[600px] lg:h-[700px]"
