@@ -35,7 +35,7 @@ const Menubar = ({visible, handleCloseMenubar}) => {
                 <div className="w-full container h-screen flex flex-col justify-between">
                     <div>
                         <div className='flex justify-between items-center py-4'>
-                            <img src={logo} alt=""/>
+                            <Link onClick={handleCloseMenubar} to='/'><img src={logo} alt=""/></Link>
                             <button
                                 onClick={handleCloseMenubar}
                                 className='bg-white w-10 h-10 rounded-full flex justify-center items-center'>

@@ -1,7 +1,8 @@
-import logo from "../../assets/img/logo.png";
-import { RxHamburgerMenu } from "react-icons/rx";
-import Menubar from "./Menubar";
-import { useState } from "react";
+import logo from '../../assets/img/logo.png'
+import {HiOutlineMenuAlt4} from 'react-icons/hi';
+import Menubar from './Menubar';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMenubar, setShowMenubar] = useState(false);
@@ -12,9 +13,9 @@ const Navbar = () => {
     <div className="bg-primary-800">
       <div className="container">
         <div className="flex justify-between items-center py-4">
-          <img src={logo} alt="" />
+          <Link to='/'> <img src={logo} alt="" /></Link>
           <button onClick={() => setShowMenubar(true)} className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
-            <RxHamburgerMenu className="text-xl" />
+            <HiOutlineMenuAlt4 className="text-xl" />
           </button>
         </div>
       </div>
