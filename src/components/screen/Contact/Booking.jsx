@@ -16,7 +16,7 @@ const Booking = () => {
                                 className="text-[20px] w-[140px] h-[50px] border-2 border-[#f0f0f0] flex justify-center items-center">Marketing</p>
                         </div>
                         <div className="mt-[50px]">
-                            <form action="">
+                            <form>
                                 <input
                                     className=" text-[20px] w-full border-b-2 border-[#f0f0f0] pb-2 outline-none"
                                     type="text"
