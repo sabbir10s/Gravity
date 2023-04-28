@@ -1,0 +1,27 @@
+[
+    {
+        "_id": 1,
+        "question" : "What services does Gravity provide?",
+        "answer" : "Gravity is a digital agency that specializes in providing top-class IT and digital branding services. Our services include website design and development, mobile app development, social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), content marketing, branding, and more."
+    },
+    {
+        "_id": 2,
+        "question" : "How does Gravity approach projects?",
+        "answer" : "Gravity is a digital agency that specializes in providing top-class IT and digital branding services. Our services include website design and development, mobile app development, social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), content marketing, branding, and more."
+    },
+    {
+        "_id": 3,
+        "question" : "What industries does Gravity work with?",
+        "answer" : "Gravity is a digital agency that specializes in providing top-class IT and digital branding services. Our services include website design and development, mobile app development, social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), content marketing, branding, and more."
+    },
+    {
+        "_id": 4,
+        "question" : "How long does it take to complete a project with Gravity?",
+        "answer" : "Gravity is a digital agency that specializes in providing top-class IT and digital branding services. Our services include website design and development, mobile app development, social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), content marketing, branding, and more."
+    },
+    {
+        "_id": 5,
+        "question" : "How can I get started with Gravity?",
+        "answer" : "Gravity is a digital agency that specializes in providing top-class IT and digital branding services. Our services include website design and development, mobile app development, social media marketing, search engine optimization (SEO), pay-per-click advertising (PPC), content marketing, branding, and more."
+    }
+]
