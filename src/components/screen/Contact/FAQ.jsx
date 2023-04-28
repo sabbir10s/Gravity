@@ -30,7 +30,7 @@ const FAQ = () => {
             setOpenAns(open)
     }
     return (
-        <div className='container py-[120px]'>
+        <div className='container py-[100px]'>
             <h2 className='text-[26px] md:text-[36px] lg:text-[50px] font-bold'>Let’s  explore the thoughts <br /> that are on your mind.</h2>
             <div className='h-1 bg-primary-800 w-20 mb-[60px]'></div>
             {questions.map((question,open) => <div key={question._id}
