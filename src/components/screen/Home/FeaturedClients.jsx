@@ -14,7 +14,7 @@ const FeaturedClients = () => {
             <div className=" ">
                 <div className='background'>
                     <h2
-                        className=" container text-[36px] lg:text-[44px] pb-6 md:py-6 lg:py-12 text-secondary-800 font-semibold">Featured Clients</h2>
+                        className=" container text-[36px] lg:text-[64px] pb-6 md:py-6 lg:py-12 text-secondary-800 font-semibold">Featured Clients</h2>
                 </div>
                 <div
                     className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-[40px]'>
