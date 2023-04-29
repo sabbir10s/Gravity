@@ -1,5 +1,5 @@
 import {useState} from "react";
-
+import '../../../styles/Booking.css'
 const Booking = () => {
     const tags = ['Strategy', 'Design', 'Development', 'Marketing'];
     const [selectedTags,
@@ -20,10 +20,10 @@ const Booking = () => {
                                         ...selectedTags,
                                         tag
                                     ])}
-                                    className={`px-6 py-2 m-2 text-[17px] font-semibold rounded-full focus:outline-none ${selectedTags.includes(tag)
+                                    className={` w-[140px] h-[50px] hover:text-white text-[17px] font-semibold rounded-full focus:outline-none ${selectedTags.includes(tag)
                                     ? 'bg-black text-white border-2 border-transparent'
-                                    : 'bg-white text-black border-2 border-[#f0f0f0]'}`}>
-                                    {tag}
+                                    : 'tagButton bg-white text-black border-2 border-[#f0f0f0]'}`}>
+                                    <span className="text">{tag}</span>
                                 </button>
                             ))}
                         </div>
