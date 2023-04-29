@@ -7,8 +7,14 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [showMenubar, setShowMenubar] = useState(false);
   const handleCloseMenubar = () => {
-    setShowMenubar(false);
-  };
+    const modalContent = document.querySelector('.modal-content');
+    modalContent.classList.add('slide-out');
+    modalContent.addEventListener('animationend', () => {
+      modalContent.style.display = 'none';
+      // setShowModal(false);
+      setShowMenubar(false);
+    }, {once: true});
+};
   return (
     <div className="bg-primary-800">
       <div className="container">
