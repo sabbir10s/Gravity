@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-[50px]">
-          <div className="h-[0.5px] bg-white/20"></div>
+          <div className="h-[0.5px] bg-white/5"></div>
         </div>
 
         <div className="container lg:flex justify-between">
