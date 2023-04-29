@@ -11,7 +11,7 @@ const Process = () => {
         <div className="w-24 lg:w-52 h-[5px] my-5 bg-primary-600"></div>
       </div>
       {/* steps line */}
-      <div className="steps py-1 bg-primary-50 mt-24"></div>
+      <div className="hidden lg:block steps py-1 bg-primary-50 mt-24"></div>
       {/* process description */}
       <section className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
