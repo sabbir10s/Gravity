@@ -6,7 +6,6 @@ import bosphorus from "../../../assets/img/bosphorus.png";
 import tappware from "../../../assets/img/tappware.png";
 import jobhirehub from "../../../assets/img/jobhirehub.png";
 import streamlare from "../../../assets/img/streamlare.png";
-import "../../../styles/FeaturedClients.css";
 
 const FeaturedClients = () => {
   return (
@@ -18,7 +17,7 @@ const FeaturedClients = () => {
             <marquee direction="right">Featured Clients</marquee>
           </h2>
         </div>
-        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-[40px]">
+        <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center gap-[40px] pb-8 lg:pb-16">
           <div className="feature_img_hover_styles">
             <img src={eximBank} alt="" />
           </div>
