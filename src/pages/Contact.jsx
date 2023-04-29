@@ -1,17 +1,19 @@
 import Booking from "../components/screen/Contact/Booking";
 import Calender from "../components/screen/Contact/Calender";
-import ContactHero from "../components/screen/Contact/ContactHero";
 import FAQ from "../components/screen/Contact/FAQ";
+import EveryHero from "../components/shared/EveryHero";
 
 const Contact = () => {
-    return (
-        <div>
-            <ContactHero/>
-            <Booking/>
-            <Calender/>
-            <FAQ/>
-        </div>
-    );
+  return (
+    <div>
+      <section className="bg-primary-800 text-white pb-5">
+        <EveryHero>Let’s achieve your goals together connect with Gravity 👋</EveryHero>
+      </section>
+      <Booking />
+      <Calender />
+      <FAQ />
+    </div>
+  );
 };
 
 export default Contact;

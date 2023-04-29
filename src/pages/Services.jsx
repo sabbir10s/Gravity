@@ -1,3 +1,4 @@
+import FAQ from "../components/screen/Contact/FAQ";
 import Service from "../components/screen/services/Service";
 import EveryHero from "../components/shared/EveryHero";
 
@@ -10,7 +11,9 @@ const Services = () => {
       <section>
         <Service />
       </section>
-      <section>FaQ</section>
+      <section>
+        <FAQ />
+      </section>
     </div>
   );
 };

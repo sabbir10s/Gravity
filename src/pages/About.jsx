@@ -8,7 +8,7 @@ import EveryHero from "../components/shared/EveryHero";
 const About = () => {
   return (
     <div>
-      <section className="bg-primary-800 text-white pb-5">
+      <section className="bg-primary-800 text-white pb-2.5 lg:pb-8">
         <EveryHero>We make brands that demand attention! Loud, proud, and impossible to ignore.</EveryHero>
         <AboutSlide />
       </section>

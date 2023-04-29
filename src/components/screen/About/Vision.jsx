@@ -6,7 +6,7 @@ const Vision = () => {
       <div className=" pt-8 lg:pt-28 order-2 md:order-none">
         <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold">Our Vision</h2>
         <div className="w-24 h-[5px] my-5 bg-primary-600"></div>
-        <p className="text-xl md:text-[28px] lg:text-[32px] md:leading-relaxed lg:leading-[48px] ">
+        <p className="text-xl md:text-[24px] lg:text-[28px] md:leading-relaxed lg:leading-[48px] ">
           Gravity is a dynamic digital agency that specializes in delivering cutting-edge solutions for businesses of all sizes. With a team of
           skilled professionals and a focus on innovation and excellence, Gravity helps its clients achieve their digital goals and take their brands
           to new heights. From web design and development to branding and marketing, Gravity offers a comprehensive range of services that are

@@ -39,28 +39,33 @@ const AboutSlide = () => {
         modules={[Autoplay, Pagination]}
       >
         <SwiperSlide>
-          <div className="w-full h-[250px] lg:w-[616px] lg:h-[517px]">
+          <div className="w-full h-[230px] lg:w-[616px] lg:h-[517px]">
             <img loading="lazy" className="w-full h-full object-fill object-center" src={slider1} alt="slider1" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] lg:w-[616px]  lg:h-[517px]">
+          <div className="w-full h-[230px] lg:w-[616px]  lg:h-[517px]">
             <img loading="lazy" className="w-full h-full object-fill object-center" src={slider2} alt="slider2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] lg:w-[616px] lg:h-[517px]">
+          <div className="w-full h-[230px] lg:w-[616px] lg:h-[517px]">
             <img loading="lazy" className="w-full h-full object-fill object-center" src={slider3} alt="slider3" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] lg:w-[616px] lg:h-[517px]">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider1} alt="slider3" />
+          <div className="w-full h-[230px] lg:w-[616px] lg:h-[517px]">
+            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider1} alt="slider1" />
           </div>
-        </SwiperSlide>{" "}
+        </SwiperSlide>
         <SwiperSlide>
-          <div className="w-full h-[250px] lg:w-[616px] lg:h-[517px]">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider2} alt="slider3" />
+          <div className="w-full h-[230px] lg:w-[616px]  lg:h-[517px]">
+            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider2} alt="slider2" />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="w-full h-[230px] lg:w-[616px] lg:h-[517px]">
+            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider3} alt="slider3" />
           </div>
         </SwiperSlide>
       </Swiper>
