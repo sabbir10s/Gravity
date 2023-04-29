@@ -3,7 +3,7 @@ import ServiceDesign from "./ServiceDesign";
 
 const Service = () => {
   return (
-    <div className="container py-12 lg:pt-28">
+    <div className="container">
       {serviceData.map((serviceDetails) => (
         <ServiceDesign key={serviceDetails._id} serviceDetails={serviceDetails} />
       ))}
