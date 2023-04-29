@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <div className="bg-primary-800 text-white py-[52px]">
       <div className="container">
-        <h1 className="font-medium text-[40px] lg:text-[100px] lg:leading-[110px] lg:w-5/6 ">Ideas transformed into masterpieces</h1>
+        <h1 className="font-medium text-3xl md:text-[40px] lg:text-[100px] lg:leading-[110px]">
+          Ideas transformed into <br /> masterpieces
+        </h1>
         <p className="text-[16px] lg:text-[24px] lg:w-4/5 mt-[16px] lg:mt-[24px]">
           Gravity is a digital agency offering IT and digital branding services. We provide customized solutions to achieve business goals with
           outstanding results.
