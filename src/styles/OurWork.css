@@ -1,0 +1,12 @@
+.disk {
+  list-style: none;
+  padding-left: 20px; /* add some padding to move the text away from the bullet point */
+}
+
+.disk li::before {
+  content: "•"; /* set the content of the pseudo-element to a bullet point */
+  display: inline-block;
+  width: 3px; /* change this value to resize the bullet point */
+  margin-left: -20px; /* move the bullet point to the left so it aligns with the text */
+  padding-right: 20px;
+}
