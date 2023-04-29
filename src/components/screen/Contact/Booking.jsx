@@ -1,4 +1,9 @@
+import {useState} from "react";
+import '../../../styles/Booking.css'
 const Booking = () => {
+    const tags = ['Strategy', 'Design', 'Development', 'Marketing'];
+    const [selectedTags,
+        setSelectedTags] = useState([]);
     return (
         <div className="bg-white">
             <div className="container py-[120px]">
@@ -6,14 +11,21 @@ const Booking = () => {
                     <div className="lg:col-span-2">
                         <p className="uppercase text-[20px] text-secondary-800">Pick what you are interested in</p>
                         <div className="mt-[20px] flex flex-wrap gap-8">
-                            <p
-                                className="text-[20px] w-[140px] h-[50px] border-2 border-[#f0f0f0] flex justify-center items-center">Strategy</p>
-                            <p
-                                className="text-[20px] w-[140px] h-[50px] border-2 border-[#f0f0f0] flex justify-center items-center">Design</p>
-                            <p
-                                className="text-[20px] w-[140px] h-[50px] border-2 border-[#f0f0f0] flex justify-center items-center">Development</p>
-                            <p
-                                className="text-[20px] w-[140px] h-[50px] border-2 border-[#f0f0f0] flex justify-center items-center">Marketing</p>
+                            {tags.map(tag => (
+                                <button
+                                    key={tag}
+                                    onClick={() => selectedTags.includes(tag)
+                                    ? setSelectedTags(selectedTags.filter(t => t !== tag))
+                                    : setSelectedTags([
+                                        ...selectedTags,
+                                        tag
+                                    ])}
+                                    className={` w-[140px] h-[50px] hover:text-white text-[17px] font-semibold rounded-full focus:outline-none ${selectedTags.includes(tag)
+                                    ? 'bg-black text-white border-2 border-transparent'
+                                    : 'tagButton bg-white text-black border-2 border-[#f0f0f0]'}`}>
+                                    <span className="text">{tag}</span>
+                                </button>
+                            ))}
                         </div>
                         <div className="mt-[50px]">
                             <form>
