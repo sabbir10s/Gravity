@@ -46,9 +46,9 @@ const Hero = () => {
     };
 
     return (
-        <div className="bg-primary-800 text-white">
+        <div className="bg-primary-800 text-white py-32 lg:py-0">
             <div>
-                <div className="container h-screen flex items-center">
+                <div className="container lg:h-screen flex items-center">
                     <div>
                         <h1
                             className="font-medium text-3xl md:text-[40px] lg:text-[100px] lg:leading-[110px]">
@@ -56,14 +56,11 @@ const Hero = () => {
                             <br/>
                             masterpieces
                         </h1>
-                        <p className="text-[16px] lg:text-[24px] mt-[16px] lg:mt-[24px]">
+                        <p className="text-[16px] lg:text-[24px] mt-[16px] lg:mt-[24px] max-w-[750px]">
                             Gravity is a digital agency offering IT and digital branding
-                            <br/>
                             services. We provide customized solutions to achieve business
-                            <br/>
                             goals with outstanding results.
                         </p>
-                        {/* <p>{height}</p> */}
                     </div>
                 </div>
 
