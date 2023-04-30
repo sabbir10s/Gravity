@@ -1,6 +1,7 @@
 import play from "../../../assets/icon/Play.png";
 import video from "../../../assets/video/Final.mp4"
 import {useEffect, useRef, useState} from "react";
+import VideoModal from "../../shared/VideoModal";
 const Hero = () => {
     const sectionRef = useRef(null);
     const [isVisible,
@@ -37,6 +38,13 @@ const Hero = () => {
         };
     }, []);
 
+
+    const [showVideoModal, setShowVideoModal] = useState(false);
+
+    const handleCloseVideoModal = () => {
+        setShowVideoModal(false);
+    };
+
     return (
         <div className="bg-primary-800 text-white">
             <div>
@@ -64,8 +72,7 @@ const Hero = () => {
                         ? (
                             <div
                                 className="mt-[32px] lg:mt-[60px] flex items-center justify-center relative z-0 duration-1000">
-                                {/* <img className=" p-20 lg:p-28 " src={logo} alt="" /> */}
-                                <button className="absolute z-10">
+                                <button onClick={() => setShowVideoModal(true)} className="absolute z-10">
                                     <img
                                         className=" cursor-pointer w-[56px] md:w-[100px] lg:w-[200px] h-[56px] md:h-[100px] lg:h-[200px]"
                                         src={play}
@@ -111,6 +118,7 @@ const Hero = () => {
                     </p>
                 </div>
             </div>
+            <VideoModal handleCloseVideoModal={handleCloseVideoModal} visible={showVideoModal}/>
         </div>
     );
 };
