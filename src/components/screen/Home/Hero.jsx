@@ -36,7 +36,7 @@ const Hero = () => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [height]);
 
 
     const [showVideoModal, setShowVideoModal] = useState(false);
@@ -63,7 +63,7 @@ const Hero = () => {
                             <br/>
                             goals with outstanding results.
                         </p>
-                        <p>{height}</p>
+                        {/* <p>{height}</p> */}
                     </div>
                 </div>
 
