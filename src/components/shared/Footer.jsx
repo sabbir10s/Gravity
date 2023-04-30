@@ -4,6 +4,7 @@ import facebook from "../../assets/icon/facebook.png";
 import linkedIn from "../../assets/icon/linkedIn.png";
 import twitter from "../../assets/icon/twitter.png";
 import logo from "../../assets/img/full logo.png";
+import '../../styles/Footer.css'
 const Footer = () => {
     return (
         <div className="bg-secondary-800 text-white">
@@ -16,9 +17,31 @@ const Footer = () => {
                             <div className="bg-white w-full group-hover:w-0 duration-300 h-[2px] mx-auto"></div>
                         </button>
                     </div>
-                    <a href="#">
-                        <img src={arrow} alt=""/>
+
+                    <a
+                        href="#"
+                        className="js-btn btn relative border-[0.5px]"
+                        data-btn-scroll="true"
+                        data-btn-autoplay="play">
+                        <svg
+                            width="100px"
+                            height="100px"
+                            viewBox="0 0 100 100"
+                            preserveAspectRatio="none">
+                            <circle
+                                className="js-circle circle"
+                                cx="50"
+                                cy="50"
+                                r="48"
+                                stroke="white"
+                                strokeWidth="3"
+                                fill="none"/>
+
+                        </svg>
+
+                        <img className=" absolute top-8 left-7" src={arrow} alt="" />
                     </a>
+
                 </div>
 
                 <div className="mt-[40px] lg:mt-[65px] lg:flex justify-between container">
@@ -28,9 +51,9 @@ const Footer = () => {
                         <button className="text-white group">
                             <h4 className="text-[20px] lg:text-[30px] lg:mt-[10px]">hello@gravityltd.co</h4>
                             <div className="bg-white/20 w-full h-[1px] mx-auto">
-                            <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
+                                <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
                             </div>
-                            
+
                         </button>
                     </div>
                     <div className="mt-[20px] lg:mt-0">
