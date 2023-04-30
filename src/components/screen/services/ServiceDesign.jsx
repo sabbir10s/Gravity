@@ -1,7 +1,7 @@
+/* eslint-disable react/prop-types */
 import ServiceDetails from "./ServiceDetails";
 import ServiceImage from "./serviceImage";
 
-/* eslint-disable react/prop-types */
 const ServiceDesign = ({ serviceDetails }) => {
   const { image, isReverse } = serviceDetails;
 

@@ -9,4 +9,4 @@ const ServiceImage = ({ image }) => {
   );
 };
 
-export default ServiceImage;  
+export default ServiceImage;
