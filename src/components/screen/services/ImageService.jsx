@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const ServiceImage = ({ image }) => {
+const ImageService = ({ image }) => {
   return (
     <div className="lg:w-[560px] relative">
       <div className=" bg-primary-800 pr-1 lg:pr-2 pb-1 lg:pb-2">
@@ -9,4 +9,4 @@ const ServiceImage = ({ image }) => {
   );
 };
 
-export default ServiceImage;
+export default ImageService;
