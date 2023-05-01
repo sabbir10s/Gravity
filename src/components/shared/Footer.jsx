@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="container lg:flex justify-between">
           <div className="text-[17px]">
-            <img src={logo} alt="" />
+            <img className="cursor-pointer" src={logo} alt="" />
             <p className="mt-[32px]">© Gravity 2023. All rights reserved.</p>
             <p>Privacy Policy</p>
           </div>
