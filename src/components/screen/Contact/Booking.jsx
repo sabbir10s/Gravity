@@ -29,21 +29,21 @@ const Booking = () => {
             <div className="mt-[50px]">
               <form>
                 <input
-                  className=" text-[20px] w-full border-b-2 border-[#f0f0f0] pb-2 outline-none"
+                  className=" text-[20px] w-full border-b-2 border-[#f0f0f0] focus:border-primary-800 pb-2 outline-none"
                   type="text"
                   name="name"
                   id="name"
                   placeholder="What’s your name"
                 />
                 <input
-                  className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0] pb-2 outline-none"
+                  className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0]  focus:border-primary-800 pb-2 outline-none"
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Type e-mail address"
                 />
                 <input
-                  className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0] pb-2 outline-none"
+                  className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0]  focus:border-primary-800 pb-2 outline-none"
                   type="text"
                   name="about"
                   id="about"
