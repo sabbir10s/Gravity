@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="relative group">
             <Link to="/contact">
               <div className="progress-bar w-16 lg:w-[120px] h-16 lg:h-[120px] rounded-[50%] flex items-center justify-center relative z-10">
-                <div className="relative group-hover:animate-pulse  ">
+                <div className="relative group-hover:animate-pulse group-hover:rotate-180 duration-300 transition">
                   <img className="" src={arrow1} alt="" />
                   <img className="absolute top-[3px] left-0 w-[35px] h-[28px] hidden group-hover:inline-block" src={arrow2} alt="" />
                 </div>
