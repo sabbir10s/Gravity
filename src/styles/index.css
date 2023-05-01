@@ -12,5 +12,5 @@ body {
 
 /* custom  */
 .feature_img_hover_styles {
-  @apply bg-white/80 hover:bg-white rounded-[16px] shadow-custom_secondary hover:shadow-custom  duration-300 transition-all  w-full md:w-[300px] h-[280px] flex items-center justify-center cursor-pointer;
+  @apply bg-white/80 hover:bg-white rounded-[16px] shadow-custom_secondary hover:shadow-custom  duration-300 transition-all  w-full md:w-[300px] h-[120px] lg:h-[280px] flex items-center justify-center cursor-pointer;
 }
