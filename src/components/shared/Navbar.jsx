@@ -47,7 +47,7 @@ const Navbar = () => {
       <div className="border-b border-secondary-100/10">
         <div className="flex justify-between items-center py-4 container">
           <Link to="/">
-            <div className="w-16 h-16">
+            <div className=" w-10 lg:w-16   h-10 lg:h-16">
               <img className="w-full h-full object-center" loading="lazy" src={logo} alt="logo" />
             </div>
           </Link>
