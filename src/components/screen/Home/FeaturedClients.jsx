@@ -13,7 +13,7 @@ const FeaturedClients = () => {
       <div className=" ">
         <div className="relative">
           <h2 className=" container text-[36px] lg:text-[64px] pb-6 md:py-6 lg:py-12 text-secondary-800 font-semibold z-30">Featured Clients</h2>
-          <h2 className=" z-0 hidden lg:block lg:text-[146px] text-secondary-800/5 font-bold absolute -top-12 left-0 tracking-widest w-full">
+          <h2 className=" z-0 hidden lg:block lg:text-[120px] text-secondary-800/5 font-bold absolute -top-4 left-0 tracking-widest w-full">
             Featured Clients
           </h2>
         </div>
