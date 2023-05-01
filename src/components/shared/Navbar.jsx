@@ -44,10 +44,12 @@ const Navbar = () => {
 
   return (
     <div className={`${nav ? "fixed w-full top-0 bg-primary-800 z-50 transition-all duration-300 ease-in-out" : "bg-primary-800"}`}>
-      <div className="container">
-        <div className="flex justify-between items-center py-4">
+      <div className="border-b border-secondary-100/10">
+        <div className="flex justify-between items-center py-4 container">
           <Link to="/">
-            <img src={logo} alt="" />
+            <div className="w-16 h-16">
+              <img className="w-full h-full object-center" loading="lazy" src={logo} alt="logo" />
+            </div>
           </Link>
           <button onClick={() => setShowMenubar(true)} className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
             <HiOutlineMenuAlt4 className="text-xl" />
