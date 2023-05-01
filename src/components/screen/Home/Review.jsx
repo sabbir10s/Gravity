@@ -12,9 +12,9 @@ import SwiperNavBtn from "../../theme/SwiperNavBtn";
 const Review = () => {
   return (
     <div className="bg-[#fafcfe]">
-      <div className="container py-[72px] lg:py-[130px] relative ">
+      <div className="container py-12 lg:py-[100px] relative ">
         <div className="lg:flex gap-10 backgroundImage justify-between">
-          <h2 className="lg:w-1/3 text-secondary-800 text-[32px] md:text-[36px] lg:text-[64px] font-semibold">What others are saying</h2>
+          <h2 className="lg:w-1/3 text-secondary-800 text-[34px]  md:text-[36px] lg:text-[64px] font-semibold">What others are saying</h2>
           <div className="lg:w-1/2 mt-[40px] lg:mt-0 relative bg-primary-50 p-3 rounded shadow-custom_secondary lg:bg-transparent lg:shadow-transparent">
             <Swiper modules={[Navigation, A11y]} className="">
               {reviews.map((review) => (
