@@ -56,7 +56,7 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
             <div>
               <h3 className="text-white/40 text-[18px]">Lets talk</h3>
               <button className="text-white group">
-                <span className="text-[24px]">gravity@ltd.co</span>
+                <span className="text-[24px]">hello@gravityltd.co</span>
                 <div className="bg-white w-1/4 group-hover:w-full duration-300 h-[2px]"></div>
               </button>
               <div className="flex items-center gap-[30px] mt-4 pb-14">
