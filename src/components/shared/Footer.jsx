@@ -23,15 +23,15 @@ const Footer = () => {
 
           <div className="relative group">
             <Link to="/contact">
-              <div className="progress-bar w-16 lg:w-[120px] h-16 lg:h-[120px] rounded-[50%] flex items-center justify-center relative group z-10">
+              <div className="progress-bar w-16 lg:w-[120px] h-16 lg:h-[120px] rounded-[50%] flex items-center justify-center relative z-10">
                 <div className="relative group-hover:animate-pulse  ">
                   <img className="" src={arrow1} alt="" />
                   <img className="absolute top-[3px] left-0 w-[35px] h-[28px] hidden group-hover:inline-block" src={arrow2} alt="" />
                 </div>
               </div>
             </Link>
-            <div className="spinner_footer absolute top-0 z-0 hidden group-hover:block">
-              <div className="spinner1_footer"></div>
+            <div className="spinner_footer w-16 lg:w-[120px] h-16 lg:h-[120px] absolute top-0 z-0 hidden group-hover:block">
+              <div className="spinner1_footer w-16 lg:w-[120px] h-16 lg:h-[120px]"></div>
             </div>
           </div>
         </div>
