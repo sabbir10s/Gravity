@@ -38,7 +38,13 @@ const Hero = () => {
 
   const [showVideoModal, setShowVideoModal] = useState(false);
 
+  const openModal = () => {
+    setShowVideoModal(true);
+    document.body.classList.add('modal-open');
+  };
+
   const handleCloseVideoModal = () => {
+    document.body.classList.remove('modal-open');
     setShowVideoModal(false);
   };
 
@@ -62,7 +68,7 @@ const Hero = () => {
         <section ref={sectionRef}>
           {isVisible ? (
             <div className="mt-[32px] lg:mt-[60px] flex items-center justify-center relative z-0 duration-1000">
-              <button onClick={() => setShowVideoModal(true)} className="absolute z-10">
+              <button onClick={openModal} className="absolute z-10">
                 <img className=" cursor-pointer w-[56px] md:w-[100px] h-[56px] md:h-[100px] " src={play} alt="" />
               </button>
               <video autoPlay muted loop>

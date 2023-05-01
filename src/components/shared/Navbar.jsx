@@ -12,10 +12,8 @@ const Navbar = () => {
     const handleNavigation = () => {
       if (y > window.scrollY) {
         setNev(true);
-        console.log("scrolling up");
       } else if (y < window.scrollY) {
         setNev(false);
-        console.log("scrolling down");
       }
       setY(window.scrollY);
     };
@@ -29,7 +27,13 @@ const Navbar = () => {
 
   const [showMenubar, setShowMenubar] = useState(false);
 
+  const openModal = () => {
+    setShowMenubar(true);
+    document.body.classList.add('modal-open');
+  };
+
   const handleCloseMenubar = () => {
+    document.body.classList.remove('modal-open');
     const modalContent = document.querySelector(".modal-content");
     modalContent.classList.add("slide-out");
     modalContent.addEventListener(
@@ -51,7 +55,7 @@ const Navbar = () => {
               <img className="w-full h-full object-center" loading="lazy" src={logo} alt="logo" />
             </div>
           </Link>
-          <button onClick={() => setShowMenubar(true)} className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
+          <button onClick={openModal} className="bg-white w-10 h-10 rounded-full flex justify-center items-center">
             <HiOutlineMenuAlt4 className="text-xl" />
           </button>
         </div>
