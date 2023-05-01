@@ -6,6 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-family: "Epilogue", sans-serif;
 }
