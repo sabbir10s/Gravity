@@ -99,7 +99,7 @@ const Footer = () => {
             <p>Privacy Policy</p>
           </div>
           <div>
-            <p className=" text-white/40 text-[16px] uppercase mt-[32px] lg:mt-0">Address</p>
+            <h2 className=" text-white/40 text-[16px] uppercase mt-[32px] lg:mt-0">Address</h2>
             <p className=" text-[20px] mt-[10px]">
               Uttara, Sector- 4,
               <br />
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h2>Links</h2>
+            <h2 className=" text-white/40 text-[16px] uppercase mt-[32px] lg:mt-0 lg:mb-2">Links</h2>
             <div className="flex flex-col gap-[12px] text-[20px] pb-[40px] lg:pb-[60px] mt-[32px] lg:mt-0">
               {routeLinks.map((routes) => (
                 <FooterButtonLink key={routes.id} route={routes.route} path_name={routes.path_name} />
