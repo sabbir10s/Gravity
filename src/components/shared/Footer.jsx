@@ -108,9 +108,9 @@ const Footer = () => {
             <div className="mt-[32px]">
               <p className=" text-white/40 text-[16px] uppercase ">Follow</p>
               <div className="flex items-center gap-[30px] mt-[10px]">
-                <img src={facebook} alt="" />
-                <img src={linkedIn} alt="" />
-                <img src={twitter} alt="" />
+                <img className="hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150" src={facebook} alt="" />
+                <img className="hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150" src={linkedIn} alt="" />
+                <img className="hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150" src={twitter} alt="" />
               </div>
             </div>
           </div>
