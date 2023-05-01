@@ -14,7 +14,7 @@ const Calender = () => {
         </p>
 
         <div className="calender">
-          <InlineWidget url="https://calendly.com/sabbirahmed1021/30-minute-meeting" />
+          <InlineWidget styles={{ overflowY: "hidden", height: "700px" }} url="https://calendly.com/sabbirahmed1021/30-minute-meeting" />
         </div>
       </div>
     </div>
