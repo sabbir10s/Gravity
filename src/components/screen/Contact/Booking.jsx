@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "../../../styles/Booking.css";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 const Booking = () => {
   const tags = ["Strategy", "Design", "Development", "Marketing"];
   const [selectedTags, setSelectedTags] = useState([]);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
 
   let timerInterval;
   const handleSubmit = (e) => {
@@ -35,6 +38,7 @@ const Booking = () => {
     setName("");
     setEmail("");
     setMessage("");
+    navigate("/");
   };
   return (
     <div className="bg-white">
