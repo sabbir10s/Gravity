@@ -16,7 +16,7 @@ const Booking = () => {
                   onClick={() =>
                     selectedTags.includes(tag) ? setSelectedTags(selectedTags.filter((t) => t !== tag)) : setSelectedTags([...selectedTags, tag])
                   }
-                  className={`w-[150px] lg:w-[170px] h-[50px] hover:text-white text-[14px] lg:text-[20px] font-semibold rounded-full focus:outline-none ${
+                  className={` py-3 px-10 hover:text-white text-[14px] lg:text-[20px] font-semibold rounded-full focus:outline-none ${
                     selectedTags.includes(tag)
                       ? "bg-black text-white border-2 border-transparent"
                       : "tagButton bg-white text-black border-2 border-[#f0f0f0]"
@@ -59,14 +59,14 @@ const Booking = () => {
             <div>
               <p className="uppercase text-[16px] text-secondary-800/50">Address</p>
               <p className="mt-[10px] text-[20px] text-secondary-800">
-                820 Valencia Street, San
+                Uttara, Sector- 4,
                 <br />
-                Franciisco, CA, 94110
+                Dhaka, Bangladesh
               </p>
             </div>
             <div className="mt-[60px]">
               <p className="uppercase text-[16px] text-secondary-800/50">Prefer to talk?</p>
-              <p className="mt-[10px] text-[20px] text-secondary-800">+8801 3663 2727</p>
+              <p className="mt-[10px] text-[20px] text-secondary-800">09638-945755</p>
             </div>
           </div>
         </div>

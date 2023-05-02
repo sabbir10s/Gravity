@@ -1,23 +1,24 @@
 /* footer icon  */
 .progress-bar {
-  background: radial-gradient(closest-side, #090e36 95%, transparent 80% 100%), conic-gradient(white 25%, gray 0);
-  animation: progress 2s 1 forwards;
+  background: radial-gradient(closest-side, #090e36 95%, transparent 80% 100%), conic-gradient(white 35%, gray 0);
+  animation: progress 2s linear infinite;
   transition: background 1s ease-in-out;
 }
 
 .progress-bar:hover {
   background: radial-gradient(closest-side, #090e36 95%, transparent 80% 100%), conic-gradient(white 100%, gray 0);
   cursor: pointer;
+  animation: progress 2s forwards;
 }
 
 /* gradient animator */
 .spinner_footer {
-  background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+  background-image: linear-gradient(rgb(186, 66, 255, 0.3) 35%, rgb(0, 225, 255, 0.3));
   animation: spinning82341 1.7s linear infinite;
   text-align: center;
   border-radius: 70px;
   filter: blur(1px);
-  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+  box-shadow: 0px -5px 20px 0px rgb(186, 66, 255, 0.3), 0px 5px 20px 0px rgb(0, 225, 255, 0.3);
 }
 
 .spinner1_footer {
@@ -26,6 +27,11 @@
 }
 
 @keyframes spinning82341 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes progress {
   to {
     transform: rotate(360deg);
   }
