@@ -1,4 +1,3 @@
-import jobhirehub from "../../../assets/img/jobhirehub.png";
 import { reviews } from "../../../data/ReviewData";
 import "../../../styles/review.css";
 
@@ -31,7 +30,6 @@ const Review = () => {
                         <h3 className="font-semibold text-[16px] lg:text-[20px]">{review?.client?.name},</h3>
                         <p className="text-primary-800 font-medium text-[14px] lg:text-[16px]">{review?.client?.profession}</p>
                       </div>
-                      <img className="w-[140px] lg:w-[180px]" src={jobhirehub} alt="" />
                     </div>
                   </div>
                 </SwiperSlide>
