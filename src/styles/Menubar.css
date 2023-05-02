@@ -90,5 +90,5 @@ a.flip-animate:focus span {
 
 .link.flip-animate:hover span:before,
 .link.flip-animate:focus span:before {
-  color: #0052d4;
+  color: #007bff;
 }
