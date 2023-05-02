@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="mt-[40px] lg:mt-[65px] container lg:flex items-center justify-between">
           <div>
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Email</p>
-            <button className="text-white">
+            <button className="text-white hover:text-primary-800">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="mailto:hello@gravityltd.co">
                 hello@gravityltd.co
               </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="mt-[24px] lg:mt-0">
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Phone Number</p>
-            <button className="text-white">
+            <button className="text-white hover:text-primary-800">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="tel:09638945755">
                 09638-945755
               </Link>
