@@ -18,8 +18,10 @@ const Footer = () => {
             <Link to="/contact">
               {" "}
               <button className="text-white group">
-                <h2 className="text-[24px] lg:text-[80px] font-semibold">Let’s connect!</h2>
-                <div className="bg-white w-full group-hover:w-0 duration-300 h-[1px] mx-auto"></div>
+                <h2 className="text-[24px] lg:text-[80px] text-white group-hover:text-primary-800 font-semibold duration-300 transition">
+                  Let’s connect!
+                </h2>
+                <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
               </button>
             </Link>
           </div>
