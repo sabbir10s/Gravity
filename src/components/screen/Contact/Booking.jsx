@@ -1,8 +1,41 @@
 import { useState } from "react";
 import "../../../styles/Booking.css";
+import Swal from "sweetalert2";
 const Booking = () => {
   const tags = ["Strategy", "Design", "Development", "Marketing"];
   const [selectedTags, setSelectedTags] = useState([]);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  let timerInterval;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    Swal.fire({
+      title: "Thank you for contacting us!",
+      html: "Please wait while we connect you.",
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: () => {
+        Swal.showLoading();
+        const b = Swal.getHtmlContainer().querySelector("b");
+        timerInterval = setInterval(() => {
+          b.textContent = Swal.getTimerLeft();
+        }, 1200);
+      },
+      willClose: () => {
+        clearInterval(timerInterval);
+      },
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log("I was closed by the timer");
+      }
+    });
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <div className="bg-white">
       <div className="container py-[44px] lg:py-[144px]">
@@ -27,27 +60,36 @@ const Booking = () => {
               ))}
             </div>
             <div className="mt-[50px]">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                   className=" text-[20px] w-full border-b-2 border-[#f0f0f0] focus:border-primary-800 pb-2 outline-none"
                   type="text"
                   name="name"
                   id="name"
                   placeholder="What’s your name"
+                  required
                 />
                 <input
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                   className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0]  focus:border-primary-800 pb-2 outline-none"
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Type e-mail address"
+                  required
                 />
                 <input
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
                   className="mt-[50px] text-[20px] w-full border-b-2 border-[#f0f0f0]  focus:border-primary-800 pb-2 outline-none"
                   type="text"
                   name="about"
                   id="about"
                   placeholder="What can you tell us about it?"
+                  required
                 />
                 <button className=" w-full lg:w-fit mt-[50px] text-[20px] bg-primary-800 hover:bg-primary-600 rounded shadow-custom cursor-pointer duration-300 transition-all ease-in-out text-white px-[80px] py-[20px]">
                   Send a Request
