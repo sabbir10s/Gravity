@@ -5,7 +5,7 @@ const Vision = () => {
     <section className="grid gap-8 grid-cols-1 md:grid-cols-2 h-full lg:h-[947px] container text-secondary-800 ">
       <div className=" pt-8 lg:pt-28 order-2 md:order-none">
         <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold">Our Vision</h2>
-        <div className="w-24 h-[5px] my-5 bg-primary-600"></div>
+        <div className="w-24 h-[7px] my-5 bg-primary-600"></div>
         <p className="text-xl md:text-[24px] lg:text-[28px] md:leading-relaxed lg:leading-[48px] ">
           Gravity is a dynamic digital agency that specializes in delivering cutting-edge solutions for businesses of all sizes. With a team of
           skilled professionals and a focus on innovation and excellence, Gravity helps its clients achieve their digital goals and take their brands
