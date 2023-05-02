@@ -15,18 +15,24 @@ const Footer = () => {
         <div className="flex items-center justify-between container">
           <div>
             <h3 className="text-[20px] lg:text-[30px]">Have a project in mind?</h3>
-            <button className="text-white group">
-              <h2 className="text-[24px] lg:text-[50px] font-semibold">Let’s connect!</h2>
-              <div className="bg-white w-full group-hover:w-0 duration-300 h-[2px] mx-auto"></div>
-            </button>
+            <Link to="/contact">
+              {" "}
+              <button className="text-white group">
+                <h2 className="text-[24px] lg:text-[80px] text-white group-hover:text-primary-800 font-semibold duration-300 transition">
+                  Let’s connect!
+                </h2>
+                <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
+              </button>
+            </Link>
           </div>
 
-          <div className="relative group">
+          <div className="relative group block md:hidden">
             <Link to="/contact">
-              <div className="progress-bar w-16 lg:w-[100px] h-16 lg:h-[100px] rounded-[50%] flex items-center justify-center relative z-10"></div>
-              <div className="absolute z-20 top-[20px] left-[17px] lg:top-[35px] lg:left-[30px] group-hover:animate-pulse group-hover:rotate-180 duration-300 transition">
-                <img className=" w-7 lg:w-full" src={arrow1} alt="" />
-                <img className="absolute top-[3px] left-0 w-7 lg:w-[35px] lg:h-[28px] hidden group-hover:inline-block" src={arrow2} alt="" />
+              <div className="progress-bar w-16 lg:w-[100px] h-16 lg:h-[100px] rounded-[50%] flex items-center justify-center relative z-10">
+                <div className=" group-hover:rotate-180 duration-300 transition">
+                  <img className=" w-7 lg:w-full" src={arrow1} alt="" />
+                  <img className="absolute top-[3px] left-0 w-7 lg:w-[35px] lg:h-[28px] hidden group-hover:inline-block" src={arrow2} alt="" />
+                </div>
               </div>
             </Link>
             <div className="spinner_footer w-16 lg:w-[100px] h-16 lg:h-[100px] absolute top-0 z-0 hidden group-hover:block">
