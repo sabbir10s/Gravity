@@ -2,8 +2,9 @@ import { useSwiper } from "swiper/react";
 
 const SwiperNavBtn = () => {
   const swiper = useSwiper();
+
   return (
-    <div className=" space-x-4 text-right pb-2 pt-6">
+    <div className="space-x-4 text-right pb-2 pt-6">
       <button className="bg-white shadow-custom_secondary hover:shadow-custom group py-1 px-4 rounded-3xl" onClick={() => swiper.slidePrev()}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
