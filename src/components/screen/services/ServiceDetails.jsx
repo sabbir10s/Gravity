@@ -4,7 +4,7 @@ const ServiceDetails = ({ service }) => {
   return (
     <div className="text-secondary-800 lg:mt-5 mb-8 lg:mb-0">
       <h2 className="text-4xl lg:text-[64px] font-semibold mt-8">{title}</h2>
-      <div className="w-24 h-[5px] mt-6 bg-primary-600"></div>
+      <div className="w-32 h-[7px] mt-6 bg-primary-800"></div>
       <p className="text-base lg:text-[20px] leading-[24px] lg:leading-[30px] mt-5">{details_desc}</p>
       <ul className="pt-8 space-y-4">
         {key_services.map((item, i) => (

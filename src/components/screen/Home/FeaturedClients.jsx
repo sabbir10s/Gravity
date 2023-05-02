@@ -12,7 +12,7 @@ const FeaturedClients = () => {
     <div className="pt-[60px] lg:pt-[144px] container">
       <div>
         <div className="relative">
-          <h2 className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">Featured Clients</h2>
+          <h2 className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">Trusted Partner</h2>
         </div>
         <div className="mt-[16px] lg:mt-[26px] grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 lg:gap-[40px]">
           <div className="feature_img_hover_styles">

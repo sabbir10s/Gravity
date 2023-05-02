@@ -26,10 +26,7 @@ const Hero = () => {
                     <p
                         className="mt-[12px] lg:mt-0 lg:w-3/4 text-[16px] md:text-[25px] lg:text-[32px]">
                         Gravity is a fast growing digital agency that specializes in providing
-                        first-rate
-                        <span className="text-[#1DFF77]">IT</span>
-                        and
-                        <span className="text-[#1DFF77]">digital branding services</span>. With a team
+                        first-rate IT and digital branding services. With a team
                         of experienced professionals who are passionate about technology and creativity,
                         Gravity has made a name for itself for providing innovative solutions that help
                         businesses of all sizes grow and succeed in todays digital landscape.
