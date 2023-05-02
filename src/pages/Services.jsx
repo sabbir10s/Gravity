@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import FAQ from "../components/screen/Contact/FAQ";
 import Service from "../components/screen/services/Service";
 import EveryHero from "../components/shared/EveryHero";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <section className="bg-primary-800 text-white pb-5">
