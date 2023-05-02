@@ -11,7 +11,7 @@ import FooterButtonLink from "../theme/FooterButtonLink";
 const Footer = () => {
   return (
     <div className="bg-secondary-800 text-white">
-      <div className="pt-[60px]">
+      <div className="pt-[60px] lg:pt-[144px] pb-[40px] lg:pb-[80px]">
         <div className="flex items-center justify-between container">
           <div>
             <h3 className="text-[20px] lg:text-[30px]">Have a project in mind?</h3>
@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="container lg:flex justify-between">
           <div className="text-[17px]">
-            <img className="cursor-pointer" src={logo} alt="" />
+            <img className="cursor-pointer w-[180px] lg:w-[271px]" src={logo} alt="" />
             <p className="mt-[32px]">© Gravity 2023. All rights reserved.</p>
             <p>Privacy Policy</p>
           </div>
@@ -117,7 +117,7 @@ const Footer = () => {
 
           <div>
             <h2 className=" text-white/40 text-[16px] uppercase mt-[32px] lg:mt-0 lg:mb-2">Links</h2>
-            <div className="flex flex-col gap-[12px] text-[20px] pb-[40px] lg:pb-[60px] mt-[32px] lg:mt-0">
+            <div className="flex flex-col gap-[12px] text-[20px] mt-[32px] lg:mt-0">
               {routeLinks.map((routes) => (
                 <FooterButtonLink key={routes.id} route={routes.route} path_name={routes.path_name} />
               ))}

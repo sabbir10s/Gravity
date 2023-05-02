@@ -55,16 +55,13 @@ const Navbar = () => {
     return (
         <div>
             <div
-                className={`${nav
-                ? "fixed top-0 z-50 w-full bg-primary-800"
-                : "w-full bg-primary-800 z-50"}`}>
+               className={`w-full bg-primary-800 ${nav && "fixed top-0 z-50 "}`}>
                 <div>
-                    <div className="flex justify-between items-center py-4 md:py-6 container">
+                    <div className="flex justify-between items-center h-[70px] md:h-[90px] container border-b">
                         <Link to="/">
                             <div>
                                 <svg
-                                    width="45"
-                                    height="45"
+                                    className="w-[35px] lg:w-[50px]"
                                     viewBox="0 0 41 41"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

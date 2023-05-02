@@ -1,14 +1,36 @@
+import { useState } from "react";
 import play from "../../../assets/icon/Play.png";
 import video from "../../../assets/video/Final.mp4";
+import VideoModal from "../../shared/VideoModal";
 
 const Video = () => {
+    
+    const [showVideoModal,
+        setShowVideoModal] = useState(false);
+
+    const openModal = () => {
+        setShowVideoModal(true);
+        document
+            .body
+            .classList
+            .add('modal-open');
+    };
+
+    const handleCloseVideoModal = () => {
+        document
+            .body
+            .classList
+            .remove('modal-open');
+        setShowVideoModal(false);
+    };
+
     return (
         <div>
             <div
-                className="container mt-[32px] lg:mt-[60px] w-full flex items-center justify-center relative z-0 duration-500">
-                <button className="absolute z-10">
+                className={`group container flex items-center justify-center relative z-0 duration-500`}>
+                <button onClick={openModal} className="absolute z-10 hidden group-hover:block">
                     <img
-                        className=" cursor-pointer w-[56px] md:w-[100px] h-[56px] md:h-[100px] "
+                        className=" cursor-pointer w-[56px] md:w-[120px] h-[56px] md:h-[120px] "
                         src={play}
                         alt=""/>
                 </button>
@@ -16,6 +38,10 @@ const Video = () => {
                     <source src={video} type="video/mp4"></source>
                 </video>
             </div>
+
+            <VideoModal
+                handleCloseVideoModal={handleCloseVideoModal}
+                visible={showVideoModal}/>
         </div>
     );
 };
