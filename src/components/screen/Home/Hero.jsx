@@ -1,118 +1,30 @@
-import play from "../../../assets/icon/Play.png";
-import video from "../../../assets/video/Final.mp4";
-import {useEffect, useRef, useState} from "react";
-import VideoModal from "../../shared/VideoModal";
 import Video from "./Video";
 const Hero = () => {
-    const sectionRef = useRef(null);
-    const [isVisible,
-        setIsVisible] = useState(false);
-
-    const [height,
-        setHeight] = useState(window.innerHeight);
-
-    useEffect(() => {
-        function handleResize() {
-            setHeight(window.innerHeight);
-        }
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.pageYOffset >= height && window.pageYOffset <= height * 2) {
-                setIsVisible(true);
-            } else {
-                setIsVisible(false);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, [height]);
-
-    const [showVideoModal,
-        setShowVideoModal] = useState(false);
-
-    const openModal = () => {
-        setShowVideoModal(true);
-        document
-            .body
-            .classList
-            .add('modal-open');
-    };
-
-    const handleCloseVideoModal = () => {
-        document
-            .body
-            .classList
-            .remove('modal-open');
-        setShowVideoModal(false);
-    };
 
     return (
-        <div className="bg-primary-800 text-white py-32 lg:py-0">
+        <div className="bg-primary-800 text-white">
             <div>
-                <div className="container lg:h-screen flex items-center">
-                    <div>
+                <div className="container flex items-center pt-[140px] lg:pt-[150px]">
+                    <div className="">
                         <h1
                             className="font-medium text-3xl md:text-[40px] lg:text-[100px] lg:leading-[110px]">
-                            Ideas transformed into
-                            <br/>
-                            masterpieces
+                            Ideas transformed into <p className="hidden lg:block"></p> masterpieces
                         </h1>
-                        <p className="text-[16px] lg:text-[24px] mt-[16px] lg:mt-[24px] max-w-[750px]">
+                        <p className="text-[16px] lg:text-[32px] mt-[16px] lg:mt-[24px] md:w-3/4 lg:w-4/5">
                             Gravity is a digital agency offering IT and digital branding services. We
                             provide customized solutions to achieve business goals with outstanding results.
                         </p>
                     </div>
                 </div>
 
-                {/* <section ref={sectionRef}>
-                    {isVisible
-                        ? (
-                            <div
-                                className="mt-[32px] lg:mt-[60px] flex items-center justify-center relative z-0 duration-500">
-                                <button onClick={openModal} className="absolute z-10">
-                                    <img
-                                        className=" cursor-pointer w-[56px] md:w-[100px] h-[56px] md:h-[100px] "
-                                        src={play}
-                                        alt=""/>
-                                </button>
-                                <video autoPlay muted loop>
-                                    <source src={video} type="video/mp4"></source>
-                                </video>
-                            </div>
-                        )
-                        : (
-                            <div
-                                className="container mt-[32px] lg:mt-[60px] w-full flex items-center justify-center relative z-0 duration-500">
-                                <button className="absolute z-10">
-                                    <img
-                                        className=" cursor-pointer w-[56px] md:w-[100px] h-[56px] md:h-[100px] "
-                                        src={play}
-                                        alt=""/>
-                                </button>
-                                <video autoPlay muted loop>
-                                    <source src={video} type="video/mp4"></source>
-                                </video>
-                            </div>
-                        )}
-                </section> */}
-                <Video/>
+                <div className="pt-[32px] lg:pt-[60px] pb-[60px] lg:pb-[101px]">
+                    <Video/>
+                </div>
                 <div
-                    className="container lg:flex justify-between items-start mt-[40px] md:mt-[50px] lg:py-[80px]">
-                    <h2 className="text-[20px] md:text-[24px] lg:text-[50px]">About</h2>
+                    className="container lg:flex justify-between items-start pb-[60px]">
+                    <h2 className="text-[20px] md:text-[30px] lg:text-[64px]">About</h2>
                     <p
-                        className="mt-[12px] lg:mt-0 lg:w-3/4 text-[16px] md:text-[19px] lg:text-[24px]">
+                        className="mt-[12px] lg:mt-0 lg:w-3/4 text-[16px] md:text-[25px] lg:text-[32px]">
                         Gravity is a fast growing digital agency that specializes in providing
                         first-rate
                         <span className="text-[#1DFF77]">IT</span>
@@ -124,9 +36,7 @@ const Hero = () => {
                     </p>
                 </div>
             </div>
-            <VideoModal
-                handleCloseVideoModal={handleCloseVideoModal}
-                visible={showVideoModal}/>
+
         </div>
     );
 };

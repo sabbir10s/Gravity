@@ -9,38 +9,35 @@ import streamlare from "../../../assets/img/streamlare.png";
 
 const FeaturedClients = () => {
   return (
-    <div className="pt-8 lg:pt-16">
-      <div className=" ">
+    <div className="pt-[60px] lg:pt-[144px] container">
+      <div>
         <div className="relative">
-          <h2 className=" container text-[36px] lg:text-[64px] pb-12 md:py-6 lg:py-12 text-secondary-800 font-semibold z-30">Featured Clients</h2>
-          <h2 className=" z-0 hidden lg:block lg:text-[146px] text-secondary-800/5 font-bold absolute -top-12 left-0 tracking-widest w-full">
-            Featured Clients
-          </h2>
+          <h2 className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">Featured Clients</h2>
         </div>
-        <div className="container grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-3 lg:gap-[40px] pb-8 lg:pb-16">
+        <div className="mt-[16px] lg:mt-[26px] grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-6 lg:gap-[40px]">
           <div className="feature_img_hover_styles">
-            <img src={eximBank} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={eximBank} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img src={ai2} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={ai2} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img className="w-[250px]" src={chew} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={chew} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img className="w-[250px]" src={may} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={may} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img src={bosphorus} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={bosphorus} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img src={tappware} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={tappware} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img src={jobhirehub} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={jobhirehub} alt="" />
           </div>
           <div className="feature_img_hover_styles">
-            <img src={streamlare} alt="" />
+            <img className=" w-[130px] lg:w-[200px] p-4" src={streamlare} alt="" />
           </div>
         </div>
       </div>
