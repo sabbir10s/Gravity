@@ -9,7 +9,7 @@ import streamlare from "../../../assets/img/streamlare.png";
 
 const FeaturedClients = () => {
   return (
-    <div className="pt-[60px] lg:pt-[144px] container">
+    <div className="py-[60px] lg:py-[144px] container">
       <div>
         <div className="relative">
           <h2 className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">Trusted Partner</h2>
