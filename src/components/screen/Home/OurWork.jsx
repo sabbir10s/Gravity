@@ -2,7 +2,7 @@ import "../../../styles/OurWork.css";
 const OurWork = () => {
   return (
     <div className="bg-[#fafcfe]">
-      <div className="container pt-[60px] lg:pt-[144px]">
+      <div className="container pt-[60px] lg:pt-[144px] pb-[60px] lg:pb-[120px]">
         <h2 className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">What we do?</h2>
         <div>
           <div className="py-[24px] lg:border-t border-[#EDF0F2] lg:grid grid-cols-3">
