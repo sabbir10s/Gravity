@@ -57,7 +57,7 @@ const Navbar = () => {
             <div
                className={`w-full bg-primary-800 ${nav && "fixed top-0 z-50 "}`}>
                 <div>
-                    <div className="flex justify-between items-center h-[70px] md:h-[90px] container border-b">
+                    <div className="flex justify-between items-center h-[70px] md:h-[90px] container">
                         <Link to="/">
                             <div>
                                 <svg
