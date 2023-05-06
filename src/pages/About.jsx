@@ -17,7 +17,7 @@ const About = () => {
         <meta charSet="utf-8" />
         <title>Gravity - About us</title>
       </Helmet>
-      <section className="bg-primary-800 text-white pb-2.5 lg:pb-8">
+      <section className="bg-primary-800 text-white pb-5 md:pb-[30px]">
         <EveryHero>We make brands that demand attention! Loud, proud, and impossible to ignore.</EveryHero>
         <AboutSlide />
       </section>

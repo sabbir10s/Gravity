@@ -41,3 +41,7 @@ body {
 .footer_icons2 {
   @apply text-secondary-800 hover:text-[#6AA0FC];
 }
+
+.about_slide {
+  @apply w-[94%] mx-auto md:mx-0 md:w-full h-[430px] lg:h-[517px] 2xl:h-[700px];
+}

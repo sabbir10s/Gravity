@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in-up" className="pt-[32px] lg:pt-[60px] pb-[60px] lg:pb-[101px]">
+        <div className="pt-[32px] lg:pt-[60px] pb-[60px] lg:pb-[101px]">
           <Video />
         </div>
         <div data-aos="fade-up" className="container lg:flex justify-between items-start pb-[60px]">
