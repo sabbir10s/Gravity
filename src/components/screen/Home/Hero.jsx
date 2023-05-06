@@ -34,7 +34,7 @@ const Hero = () => {
           <Video />
         </div>
         <div data-aos="fade-up" className="container lg:flex justify-between items-start pb-[60px]">
-          <h2 className="text-[20px] md:text-[30px] lg:text-[40px] font-medium lg:font-semibold">About</h2>
+          <h2 className="text-[20px] md:text-[30px] lg:text-[40px] font-medium lg:font-semibold lg:w-2/3">About</h2>
           <p className="mt-[12px] lg:mt-0 lg:w-3/4 text-[16px] md:text-[25px] text-justify">
             Gravity is a fast growing digital agency that specializes in providing first-rate IT and digital branding services. With a team of
             experienced professionals who are passionate about technology and creativity, Gravity has made a name for itself for providing innovative
