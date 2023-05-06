@@ -33,3 +33,5 @@ const Video = () => {
 };
 
 export default Video;
+
+// vimeo video link: https://vimeo.com/824323840

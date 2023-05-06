@@ -12,7 +12,7 @@ import { useEffect } from "react";
 const FeaturedClients = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
     });
     AOS.refresh();
   }, []);
@@ -21,7 +21,7 @@ const FeaturedClients = () => {
       <div className="py-[60px] lg:py-[144px] container">
         <div>
           <div className="relative">
-            <h2 data-aos="zoom-out-right" className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">
+            <h2 data-aos="fade-up" className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">
               Trusted Partners
             </h2>
           </div>

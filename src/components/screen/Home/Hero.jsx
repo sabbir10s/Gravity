@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 const Hero = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
     });
     AOS.refresh();
   }, []);
@@ -23,7 +23,7 @@ const Hero = () => {
               </span>{" "}
             </h1>
 
-            <p className="text-[16px] lg:text-[32px] mt-[16px] lg:mt-[24px] md:w-3/4 lg:w-4/5 ">
+            <p data-aos="fade-up" className="text-[16px] lg:text-[32px] mt-[16px] lg:mt-[24px] md:w-3/4 lg:w-4/5 ">
               Gravity is a digital agency offering IT and digital branding services. We provide customized solutions to achieve business goals with
               outstanding results.
             </p>

@@ -5,14 +5,14 @@ import { useEffect } from "react";
 const OurWork = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
     });
     AOS.refresh();
   }, []);
   return (
     <div className="bg-[#fafcfe]">
       <div className="container pt-[60px] lg:pt-[144px] pb-[60px] lg:pb-[120px]">
-        <h2 data-aos="zoom-out-right" className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">
+        <h2 data-aos="fade-up" className=" text-secondary-800 text-[36px] lg:text-[64px] font-semibold pb-[24px] lg:pb-[48px]">
           What we do?
         </h2>
         <div>
