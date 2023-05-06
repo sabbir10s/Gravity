@@ -1,5 +1,6 @@
 import { reviews } from "../../../data/ReviewData";
-import "../../../styles/review.css";
+
+import review_bg from "../../../assets/img/review.svg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,18 +13,18 @@ const Review = () => {
   return (
     <div className="bg-[#fafcfe]">
       <div className="container relative py-[60px] lg:py-[144px] ">
-        <div className="lg:flex gap-10 backgroundImage justify-between">
-          <h2 className="lg:w-1/3 text-secondary-800 text-[36px] lg:text-[64px] font-semibold">What others are saying</h2>
-          <div className="lg:w-1/2 mt-[40px] lg:mt-0 relative bg-primary-50 p-3 rounded shadow-custom_secondary lg:bg-transparent lg:shadow-transparent">
+        <div className="lg:flex gap-10 justify-between">
+          <h2 className="lg:w-1/3 text-secondary-800 text-[32px] lg:text-[64px] font-semibold">What others are saying</h2>
+          <div className="lg:w-1/2 mt-[24px] lg:mt-0 relative">
+            <div className=" absolute -top-4 lg:-top-20 lg:-left-20 w-2/5 md:w-full">
+              <img src={review_bg} alt="" />
+            </div>
             <Swiper modules={[Navigation, A11y]} className="">
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
                   <div>
-                    <p className=" text-[16px] lg:text-[24px]">
-                      <q>
-                        {" "}
-                        <i>{review.message}</i>{" "}
-                      </q>
+                    <p className=" font-medium lg:font-normal p-2 text-[16px] lg:text-[32px]">
+                      <q> {review.message}</q>
                     </p>
                     <div className="flex items-center justify-between mt-[40px]">
                       <div>

@@ -34,7 +34,7 @@ const Footer = () => {
               </Link>
             </button>
           </div>
-          <div className="mt-[24px] lg:mt-0 text-end">
+          <div className="mt-[24px] lg:mt-0 lg:text-end">
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Phone</p>
             <button className="text-white hover:text-[#6AA0FC] duration-300 transition">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="tel:09638945755">
