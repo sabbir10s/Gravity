@@ -6,9 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.modal-open {
+/* .modal-open {
   overflow: hidden;
-}
+} */
 
 .modal {
   overflow-y: scroll;
