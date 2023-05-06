@@ -9,15 +9,22 @@ import "swiper/css";
 import { Navigation, A11y } from "swiper";
 import SwiperNavBtn from "../../theme/SwiperNavBtn";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Review = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    setActiveSlide(swiper.realIndex);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
     AOS.refresh();
   }, []);
+
   return (
     <div className="bg-[#fafcfe]">
       <div className="container relative py-[60px] lg:py-[144px] ">
@@ -29,23 +36,23 @@ const Review = () => {
             <div className=" absolute -top-4 lg:-top-20 lg:-left-20 w-2/5 md:w-full">
               <img src={review_bg} alt="" />
             </div>
-            <Swiper modules={[Navigation, A11y]} className="">
+            <Swiper loop={true} onSlideChange={handleSlideChange} modules={[Navigation, A11y]} className="">
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
                   <div>
                     <p className=" font-medium lg:font-normal p-2 text-[16px] lg:text-[32px]">
-                      <q> {review.message}</q>
+                      <q>{review.message}</q>
                     </p>
-                    <div className="flex items-center justify-between mt-[40px]">
+                    <div className="flex items-center justify-between mt-[40px] ml-2">
                       <div>
-                        <h3 className="font-semibold text-[16px] lg:text-[20px]">{review?.client?.name},</h3>
-                        <p className="text-primary-800 font-medium text-[14px] lg:text-[16px]">{review?.client?.profession}</p>
+                        <h3 className="font-semibold text-[16px] lg:text-[24px]">{review?.client?.name},</h3>
+                        <p className="text-primary-800 font-medium text-[14px] lg:text-[20px]">{review?.client?.profession}</p>
                       </div>
                     </div>
                   </div>
                 </SwiperSlide>
               ))}
-              <SwiperNavBtn />
+              <SwiperNavBtn isPrev={activeSlide === 0} isNext={activeSlide === reviews.length - 1} />
             </Swiper>
           </div>
         </div>
