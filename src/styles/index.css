@@ -18,8 +18,26 @@ html {
 body {
   font-family: "Epilogue", sans-serif;
 }
+.swal2-progress-bar-custom-color::-webkit-progress-value {
+  background-color: #ffcc00; /* replace with your desired color */
+}
+
+.swal2-progress-bar-custom-color::-moz-progress-bar {
+  background-color: #ffcc00; /* replace with your desired color */
+}
 
 /* custom  */
 .feature_img_hover_styles {
   @apply bg-white/75 hover:bg-white rounded-[16px] shadow-custom_secondary hover:shadow-custom  duration-300 transition-all  w-full md:w-[300px] h-[120px] lg:h-[280px] flex items-center justify-center cursor-pointer;
+}
+
+.footer_icons,
+.footer_icons2 {
+  @apply hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150 text-xl 2xl:text-2xl;
+}
+.footer_icons {
+  @apply text-white hover:text-[#6AA0FC];
+}
+.footer_icons2 {
+  @apply text-secondary-800 hover:text-[#6AA0FC];
 }

@@ -1,7 +1,7 @@
-import serviceImg1 from "../assets/service/service (4).png";
-import serviceImg2 from "../assets/service/service (3).png";
-import serviceImg3 from "../assets/service/service (2).png";
-import serviceImg4 from "../assets/service/service (1).png";
+import serviceImg1 from "../assets/service/service (1).png";
+import serviceImg2 from "../assets/service/service (2).png";
+import serviceImg3 from "../assets/service/service (3).png";
+import serviceImg4 from "../assets/service/service (4).png";
 
 export const serviceData = [
   {
