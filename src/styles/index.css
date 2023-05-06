@@ -18,6 +18,13 @@ html {
 body {
   font-family: "Epilogue", sans-serif;
 }
+.swal2-progress-bar-custom-color::-webkit-progress-value {
+  background-color: #ffcc00; /* replace with your desired color */
+}
+
+.swal2-progress-bar-custom-color::-moz-progress-bar {
+  background-color: #ffcc00; /* replace with your desired color */
+}
 
 /* custom  */
 .feature_img_hover_styles {

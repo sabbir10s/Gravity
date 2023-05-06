@@ -17,8 +17,28 @@ const Booking = () => {
     Swal.fire({
       title: "Thank you for contacting us!",
       html: "Please wait while we connect you.",
-      timer: 2000,
+      timer: 3000,
       timerProgressBar: true,
+      customClass: {
+        container: "my-swal-container",
+        popup: "my-swal-popup",
+        header: "my-swal-header",
+        title: "my-swal-title",
+        closeButton: "my-swal-close-button",
+        icon: "my-swal-icon",
+        image: "my-swal-image",
+        htmlContainer: "my-swal-html-container",
+        input: "my-swal-input",
+        inputLabel: "my-swal-input-label",
+        validationMessage: "my-swal-validation-message",
+        actions: "my-swal-actions",
+        confirmButton: "my-swal-confirm-button",
+        denyButton: "my-swal-deny-button",
+        cancelButton: "my-swal-cancel-button",
+        loader: "my-swal-loader",
+        footer: "my-swal-footer",
+        timerProgressBar: "my-swal-progress-bar",
+      },
       didOpen: () => {
         Swal.showLoading();
         const b = Swal.getHtmlContainer().querySelector("b");
