@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "../../styles/Menubar.css";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { RiBehanceLine } from "react-icons/ri";
+import { TfiDribbble } from "react-icons/tfi";
 const Menubar = ({ visible, handleCloseMenubar }) => {
   const handleCloseModal = (e) => {
     if (e.target.id === "container") handleCloseMenubar();
@@ -69,66 +72,19 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
               <span className="text-[20px]">hello@gravityltd.co</span>
               <div className="bg-secondary-800 w-1/4 group-hover:w-full duration-700 h-[2px]"></div>
             </button>
-            <div className="flex items-center gap-[30px] mt-6 pb-14">
-              <a href="#">
-                <svg
-                  className="text-primary-600 stroke-secondary-800 hover:stroke-primary-600 duration-500"
-                  width="22"
-                  height="19"
-                  viewBox="0 0 22 19"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.1671 1.0306C21.1671 1.0306 20.4618 3.14651 19.152 4.45636C20.7641 14.5321 9.68078 21.8874 1.01562 16.1442C3.23229 16.245 5.44896 15.5397 7.06108 14.1291C2.0232 12.6177 -0.495739 6.67302 2.0232 2.03818C4.23987 4.65787 7.66562 6.16924 11.0914 6.06848C10.1846 1.83666 15.1217 -0.581522 18.1444 2.23969C19.2527 2.23969 21.1671 1.0306 21.1671 1.0306Z"
-                    strokeWidth="1.51136"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-              <a href="#">
-                <svg
-                  className="text-primary-600 stroke-secondary-800 hover:stroke-primary-600 duration-500"
-                  width="14"
-                  height="22"
-                  viewBox="0 0 14 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5452 1.01465H9.52252C8.18639 1.01465 6.90499 1.54542 5.9602 2.49021C5.01542 3.43499 4.48464 4.7164 4.48464 6.05253V9.07525H1.46191V13.1056H4.48464V21.1662H8.51495V13.1056H11.5377L12.5452 9.07525H8.51495V6.05253C8.51495 5.7853 8.6211 5.52902 8.81006 5.34006C8.99901 5.15111 9.2553 5.04495 9.52252 5.04495H12.5452V1.01465Z"
-                    strokeWidth="1.51136"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-              <a href="#">
-                <svg
-                  className="text-primary-600 stroke-secondary-800 hover:stroke-primary-600 duration-500"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    className=""
-                    d="M16.939 8.06152C18.5424 8.06152 20.08 8.69845 21.2138 9.8322C22.3475 10.9659 22.9845 12.5036 22.9845 14.107V21.16H18.9542V14.107C18.9542 13.5725 18.7419 13.06 18.3639 12.6821C17.986 12.3041 17.4735 12.0918 16.939 12.0918C16.4046 12.0918 15.892 12.3041 15.5141 12.6821C15.1362 13.06 14.9239 13.5725 14.9239 14.107V21.16H10.8936V14.107C10.8936 12.5036 11.5305 10.9659 12.6642 9.8322C13.798 8.69845 15.3357 8.06152 16.939 8.06152V8.06152Z"
-                    strokeWidth="1.51136"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path d="M6.86429 9.06836H2.83398V21.1593H6.86429V9.06836Z" strokeWidth="1.51136" strokeLinecap="round" strokeLinejoin="round" />
-                  <path
-                    d="M4.84914 6.04495C5.96207 6.04495 6.86429 5.14274 6.86429 4.0298C6.86429 2.91686 5.96207 2.01465 4.84914 2.01465C3.7362 2.01465 2.83398 2.91686 2.83398 4.0298C2.83398 5.14274 3.7362 6.04495 4.84914 6.04495Z"
-                    strokeWidth="1.51136"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
+            <div className="flex items-center space-x-4 mt-6 pb-14">
+              <Link target="_blank" to="https://www.facebook.com/gravityltd.co/">
+                <FiFacebook className="footer_icons2" />
+              </Link>
+              <Link target="_blank" to="https://www.linkedin.com/company/gravityltd/">
+                <FiLinkedin className="footer_icons2" />
+              </Link>
+              <Link target="_blank" to="https://www.behance.net/gravity-ltd">
+                <TfiDribbble className="footer_icons2" />
+              </Link>
+              <Link target="_blank" to="https://dribbble.com/gravityltd">
+                <RiBehanceLine className="footer_icons2" />
+              </Link>
             </div>
           </div>
         </div>
