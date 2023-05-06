@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import "../../styles/Menubar.css";
 const Menubar = ({ visible, handleCloseMenubar }) => {
@@ -22,9 +21,18 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
           <div className="w-full flex justify-end">
             <button
               onClick={handleCloseMenubar}
-              className="m-5 lg:m-4 bg-white hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center text-black hover:text-white duration-300"
+              className="m-5 lg:m-4 bg-primary-600 hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center duration-300"
             >
-              <AiOutlineClose className="text-xl lg:text-2xl" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6 text-white"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
             </button>
           </div>
 

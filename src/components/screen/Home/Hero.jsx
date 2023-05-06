@@ -6,11 +6,13 @@ const Hero = () => {
       <div>
         <div className="container flex items-center pt-[140px] lg:pt-[150px]">
           <div className="">
-            <h1 className="font-medium text-4xl md:text-[40px] lg:text-[80px] 2xl:text-[100px] lg:leading-[110px]">Ideas Transformed Into</h1>
-            <h2 className="font-medium text-4xl md:text-[40px] lg:text-[80px] 2xl:text-[100px] lg:leading-[110px]">
-              {" "}
-              <TypeAnimation sequence={["Masterpieces", 1000, "Perfection", 1000, "Masterwork", 1000]} repeat={Infinity} />
-            </h2>
+            <h1 className="font-medium text-4xl md:text-[40px] lg:text-[80px] 2xl:text-[100px] lg:leading-[110px]">
+              Ideas Transformed Into{" "}
+              <span className="inline-block md:block">
+                {" "}
+                <TypeAnimation sequence={["Masterpieces", 1000, "Perfection", 1000, "Masterwork", 1000]} repeat={Infinity} />
+              </span>{" "}
+            </h1>
 
             <p className="text-[16px] lg:text-[32px] mt-[16px] lg:mt-[24px] md:w-3/4 lg:w-4/5 ">
               Gravity is a digital agency offering IT and digital branding services. We provide customized solutions to achieve business goals with
