@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/full logo.png";
+import logo from "../../assets/img/full-logo.svg";
 import "../../styles/Footer.css";
 import { routeLinks } from "../../data/RouteLink";
 import FooterButtonLink from "../theme/FooterButtonLink";
@@ -49,7 +49,9 @@ const Footer = () => {
 
         <div className="container lg:flex justify-between">
           <div className="text-[17px]">
-            <img className="cursor-pointer w-[180px] lg:w-[271px]" src={logo} alt="" />
+            <Link to="/">
+              <img className="cursor-pointer w-[180px] lg:w-[271px]" src={logo} alt="" />
+            </Link>
             <p className="mt-[32px] lg:mt-[50px] text-[17px]">© Gravity 2023. All rights reserved.</p>
             <p>Privacy Policy</p>
           </div>
