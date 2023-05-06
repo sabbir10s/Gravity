@@ -6,12 +6,20 @@ import FooterButtonLink from "../theme/FooterButtonLink";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { RiBehanceLine } from "react-icons/ri";
 import { TfiDribbble } from "react-icons/tfi";
+import { useEffect } from "react";
+import AOS from "aos";
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="bg-secondary-800 text-white">
       <div className="pt-[60px] lg:pt-[144px] pb-[40px] lg:pb-[80px]">
         <div className="flex items-center justify-between container">
-          <div>
+          <div data-aos="fade-up">
             <h3 className="text-[20px] lg:text-[54px]">Have a project in mind?</h3>
             <Link to="/contact">
               {" "}
@@ -25,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-[60px] lg:pt-[120px] container lg:flex items-center justify-between">
+        <div data-aos="fade-up" className="pt-[60px] lg:pt-[120px] container lg:flex items-center justify-between">
           <div>
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Email</p>
             <button className="text-white hover:text-[#6AA0FC] duration-300 transition">
@@ -47,7 +55,7 @@ const Footer = () => {
           <div className="h-[0.5px] bg-white/5"></div>
         </div>
 
-        <div className="container lg:flex justify-between">
+        <div data-aos="fade-up" className="container lg:flex justify-between">
           <div className="text-[17px]">
             <Link to="/">
               <img className="cursor-pointer w-[180px] lg:w-[271px]" src={logo} alt="" />

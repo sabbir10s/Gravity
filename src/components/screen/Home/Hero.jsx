@@ -1,6 +1,15 @@
 import { TypeAnimation } from "react-type-animation";
 import Video from "./Video";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="bg-primary-800 text-white">
       <div>
@@ -21,10 +30,10 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="pt-[32px] lg:pt-[60px] pb-[60px] lg:pb-[101px]">
+        <div data-aos="zoom-in-up" className="pt-[32px] lg:pt-[60px] pb-[60px] lg:pb-[101px]">
           <Video />
         </div>
-        <div className="container lg:flex justify-between items-start pb-[60px]">
+        <div data-aos="fade-up" className="container lg:flex justify-between items-start pb-[60px]">
           <h2 className="text-[20px] md:text-[30px] lg:text-[40px] font-medium lg:font-semibold">About</h2>
           <p className="mt-[12px] lg:mt-0 lg:w-3/4 text-[16px] md:text-[25px] text-justify">
             Gravity is a fast growing digital agency that specializes in providing first-rate IT and digital branding services. With a team of

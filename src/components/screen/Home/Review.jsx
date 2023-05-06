@@ -8,14 +8,24 @@ import "swiper/css";
 // import required modules
 import { Navigation, A11y } from "swiper";
 import SwiperNavBtn from "../../theme/SwiperNavBtn";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const Review = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="bg-[#fafcfe]">
       <div className="container relative py-[60px] lg:py-[144px] ">
         <div className="lg:flex gap-10 justify-between">
-          <h2 className="lg:w-1/3 text-secondary-800 text-[32px] lg:text-[64px] font-semibold">What others are saying</h2>
-          <div className="lg:w-1/2 mt-[24px] lg:mt-0 relative">
+          <h1 data-aos="zoom-in-right" className="lg:w-1/3 text-secondary-800 text-[32px] lg:text-[64px] font-semibold">
+            What others are saying
+          </h1>
+          <div data-aos="zoom-in-left" className="lg:w-1/2 mt-[24px] lg:mt-0 relative">
             <div className=" absolute -top-4 lg:-top-20 lg:-left-20 w-2/5 md:w-full">
               <img src={review_bg} alt="" />
             </div>
