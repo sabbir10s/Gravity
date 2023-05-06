@@ -14,17 +14,13 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
   }
 
   return (
-    <div
-      id="container"
-      onClick={handleCloseModal}
-      className="w-full modal-overlay fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-end"
-    >
+    <div id="container" onClick={handleCloseModal} className="w-full modal-overlay fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-end">
       <div className="w-full md:w-1/2 lg:w-1/3 bg-white modal-content slide-in">
         <div className="pl-0 md:pl-12 h-screen flex flex-col justify-between">
           <div className="w-full flex justify-end">
             <button
               onClick={handleCloseMenubar}
-              className="m-5 lg:m-4 bg-primary-600 hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center duration-300"
+              className="mt-10 mr-10 lg:m-4 bg-primary-600 hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
