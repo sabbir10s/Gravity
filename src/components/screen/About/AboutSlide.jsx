@@ -74,11 +74,11 @@ const AboutSlide = () => {
             <img loading="lazy" className="w-full h-full object-fill object-center" src={slider5} alt="slider2" />
           </div>
         </SwiperSlide>
-        {/*   <SwiperSlide>
-          <div className="w-full h-[230px] lg:w-[616px] 2xl:w-full lg:h-[517px] 2xl:h-[700px]">
+        <SwiperSlide>
+          <div className="about_slide">
             <img loading="lazy" className="w-full h-full object-fill object-center" src={slider6} alt="slider3" />
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </div>
   );

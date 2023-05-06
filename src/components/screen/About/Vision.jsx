@@ -2,7 +2,7 @@ import visionImg from "../../../assets/aboutslide/vision.png";
 
 const Vision = () => {
   return (
-    <section className="grid md:block lg:block xl:grid gap-8 grid-cols-1 md:grid-cols-2 h-full lg:h-[947px] container text-secondary-800 relative ">
+    <section className="grid md:block lg:block xl:grid gap-8 grid-cols-1 md:grid-cols-2 h-full  container text-secondary-800 relative ">
       <div className=" pt-8 lg:pt-28 order-2 lg:order-none">
         <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold">Vision</h2>
         <div className="w-24 h-[7px] my-5 bg-primary-600"></div>
@@ -14,7 +14,7 @@ const Vision = () => {
           businesses succeed in the ever-changing digital landscape.
         </p>
       </div>
-      <div className="lg:mt-10 xl:mt-0 w-full h-full xl:w-[733px] 2xl:w-[1000px] xl:h-[813px] 2xl:h-[1000px] order-1 lg:order-none pt-12 md:pt-0  rounded lg:rounded-none xl:absolute top-0 lg:-right-52 xl:-right-60 2xl:-right-[720px]  block md:hidden lg:block">
+      <div className="lg:mt-10 xl:mt-0 w-full h-full xl:w-[733px] 2xl:w-[1000px] lg:h-[800px] xl:h-[813px] 2xl:h-[1000px] order-1 lg:order-none pt-12 md:pt-0  rounded lg:rounded-none xl:absolute top-0 lg:-right-52 xl:-right-60 2xl:-right-[720px]  block md:hidden lg:block">
         <img className="w-full h-full rounded lg:rounded-none" src={visionImg} alt="vision" />
       </div>
     </section>
