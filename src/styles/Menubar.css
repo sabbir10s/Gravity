@@ -8,6 +8,7 @@
   flex: end;
   align-items: center;
   animation: modal-fade-in 0.5s;
+  z-index: 1001;
 }
 
 @keyframes modal-fade-in {

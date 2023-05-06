@@ -17,7 +17,7 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
     <div
       id="container"
       onClick={handleCloseModal}
-      className="w-full modal-overlay z-50 fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-end"
+      className="w-full modal-overlay fixed inset-0 bg-opacity-30 backdrop-blur-sm flex justify-end"
     >
       <div className="w-full md:w-1/2 lg:w-1/3 bg-white modal-content slide-in">
         <div className="pl-0 md:pl-12 h-screen flex flex-col justify-between">
