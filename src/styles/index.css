@@ -25,5 +25,5 @@ body {
 }
 
 .footer_icons {
-  @apply hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150 text-xl hover:text-[#6AA0FC];
+  @apply hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150 text-xl 2xl:text-2xl text-white hover:text-[#6AA0FC];
 }

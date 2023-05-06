@@ -34,8 +34,8 @@ const Footer = () => {
               </Link>
             </button>
           </div>
-          <div className="mt-[24px] lg:mt-0">
-            <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Phone Number</p>
+          <div className="mt-[24px] lg:mt-0 text-end">
+            <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Phone</p>
             <button className="text-white hover:text-[#6AA0FC] duration-300 transition">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="tel:09638945755">
                 09638-945755
@@ -69,11 +69,11 @@ const Footer = () => {
                 <Link target="_blank" to="https://www.linkedin.com/company/gravityltd/">
                   <FiLinkedin className="footer_icons" />
                 </Link>
-                <Link target="_blank" to="https://dribbble.com/gravityltd">
-                  <RiBehanceLine className="footer_icons" />
-                </Link>
                 <Link target="_blank" to="https://www.behance.net/gravity-ltd">
                   <TfiDribbble className="footer_icons" />
+                </Link>
+                <Link target="_blank" to="https://dribbble.com/gravityltd">
+                  <RiBehanceLine className="footer_icons" />
                 </Link>
               </div>
             </div>
