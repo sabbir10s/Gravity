@@ -1,6 +1,6 @@
 .tagButton {
   display: block;
-  background: linear-gradient(to right, black 50%, white 50%);
+  background: linear-gradient(to right, #0052d4);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;

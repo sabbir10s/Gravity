@@ -66,16 +66,16 @@ const Booking = () => {
         <div className="lg:grid grid-cols-3 lg:gap-20">
           <div className="lg:col-span-2">
             <p className="uppercase text-[16px] lg:text-[20px] text-secondary-800">Pick what you are interested in</p>
-            <div className="mt-[24px] flex flex-wrap gap-8">
+            <div className="mt-[24px] flex flex-wrap gap-4 lg:gap-8">
               {tags.map((tag) => (
                 <button
                   key={tag}
                   onClick={() =>
                     selectedTags.includes(tag) ? setSelectedTags(selectedTags.filter((t) => t !== tag)) : setSelectedTags([...selectedTags, tag])
                   }
-                  className={` py-3 px-10 hover:text-white text-[14px] lg:text-[20px] font-semibold rounded-full focus:outline-none ${
+                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-semibold rounded focus:outline-none ${
                     selectedTags.includes(tag)
-                      ? "bg-black text-white border-2 border-transparent"
+                      ? "bg-primary-600 text-white border-2 border-transparent"
                       : "tagButton bg-white text-black border-2 border-[#f0f0f0]"
                   }`}
                 >
