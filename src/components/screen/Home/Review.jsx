@@ -33,14 +33,14 @@ const Review = () => {
             What others are saying
           </h1>
           <div data-aos="zoom-in-left" className="lg:w-1/2 mt-[24px] lg:mt-0 relative">
-            <div className=" absolute -top-4 lg:-top-20 lg:-left-20 w-2/5 md:w-full">
+            <div className=" absolute -top-4 lg:-top-20 lg:-left-10 w-2/5 md:w-full">
               <img src={review_bg} alt="" />
             </div>
             <Swiper loop={true} onSlideChange={handleSlideChange} modules={[Navigation, A11y]} className="">
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
                   <div>
-                    <p className=" font-medium lg:font-normal p-2 text-[16px] lg:text-[28px] text-justify">
+                    <p className=" font-medium lg:font-normal p-2 text-[16px] lg:text-[31px] text-justify">
                       <q>{review.message}</q>
                     </p>
                     <div className="flex items-center justify-between mt-[40px] ml-2">

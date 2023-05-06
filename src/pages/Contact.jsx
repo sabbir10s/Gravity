@@ -17,7 +17,7 @@ const Contact = () => {
         <title>Gravity - Contact us</title>
       </Helmet>
       <section className="bg-primary-800 text-white pb-5">
-        <EveryHero>Let’s achieve your goals together connect with Gravity</EveryHero>
+        <EveryHero>Let’s achieve your goals together connect with Gravity  </EveryHero>
       </section>
       <Booking />
       <Calender />
