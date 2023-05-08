@@ -24,7 +24,7 @@ const Footer = () => {
             <Link to="/contact">
               {" "}
               <button className="text-white group">
-                <h2 className="text-[24px] lg:text-[76px] text-white group-hover:text-[#6AA0FC] font-semibold duration-300 transition">
+                <h2 className="text-[24px] lg:text-[76px] text-white group-hover:text-link-400 font-semibold duration-300 transition">
                   Let’s connect!
                 </h2>
                 <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
@@ -36,7 +36,7 @@ const Footer = () => {
         <div data-aos="fade-up" className="pt-[60px] lg:pt-[120px] container lg:flex items-center justify-between">
           <div>
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Email</p>
-            <button className="text-white hover:text-[#6AA0FC] duration-300 transition">
+            <button className="text-white hover:text-link-400 duration-300 transition">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="mailto:hello@gravityltd.co">
                 hello@gravityltd.co
               </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <div className="mt-[24px] lg:mt-0 lg:text-end">
             <p className="uppercase text-white/40 mb-[12px] lg:mb-[17px] text-[16px] lg:text-[24px]">Phone</p>
-            <button className="text-white hover:text-[#6AA0FC] duration-300 transition">
+            <button className="text-white hover:text-link-400 duration-300 transition">
               <Link className="text-[20px] md:text-[30px] lg:text-[40px]" to="tel:09638945755">
                 09638-945755
               </Link>
@@ -79,10 +79,10 @@ const Footer = () => {
                 <Link target="_blank" to="https://www.linkedin.com/company/gravityltd/">
                   <FiLinkedin className="footer_icons" />
                 </Link>
-                <Link target="_blank" to="https://www.behance.net/gravity-ltd">
+                <Link target="_blank" to="https://dribbble.com/gravityltd">
                   <TfiDribbble className="footer_icons" />
                 </Link>
-                <Link target="_blank" to="https://dribbble.com/gravityltd">
+                <Link target="_blank" to="https://www.behance.net/gravity-ltd">
                   <RiBehanceLine className="footer_icons" />
                 </Link>
               </div>

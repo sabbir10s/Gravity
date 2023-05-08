@@ -1,34 +1,37 @@
 export const reviews = [
   {
     id: 1,
-    message: "Amazing digital agency! They took our online presence to the next level with their expertise and creativity.",
+    message: "Great, it was awesome working with him. Everything he does is perfect. Works super fast and truly excellent design skills.",
     client: {
-      name: "John David",
-      profession: "CEO of Digital Analytics",
+      name: "Kenley Lamaute",
+      profession: "CEO of JobHireHub",
     },
   },
   {
     id: 2,
-    message: "Highly recommend this digital agency for their exceptional work and outstanding customer service.",
+    message:
+      "Gravity exceeded my expectations with their exceptional services. I highly recommend them to anyone looking for a reliable and professional team to build their brand.",
     client: {
-      name: "Mangoyee Heng",
-      profession: "CEO of Digital Lab",
+      name: "Ross Gammell",
+      profession: "CEO of Chew",
     },
   },
   {
     id: 3,
-    message: "This digital agency is simply the best! They helped us achieve our online goals in no time.",
+    message:
+      "Gravity exceeded my expectations with their exceptional branding services. Working with them was a pleasure and I highly recommend them.",
     client: {
-      name: "Hong Heng",
-      profession: "CEO of JobHunt",
+      name: "jheamuel Panuelo",
+      profession: "CTO of Streamlare",
     },
   },
   {
     id: 4,
-    message: "Great experience working with this digital agency. They are knowledgeable, professional, and responsive",
+    message:
+      "Gravity exceeded my expectations with their exceptional branding services. Working with them was a pleasure and I highly recommend them.",
     client: {
-      name: "Rohit Sharma",
-      profession: "Cricketer of India",
+      name: "Hamom",
+      profession: "CTO of Hmedia",
     },
   },
   {

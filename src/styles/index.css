@@ -28,7 +28,7 @@ body {
 
 /* custom  */
 .feature_img_hover_styles {
-  @apply bg-white/75 hover:bg-white rounded-[16px] shadow-custom_secondary hover:shadow-custom  duration-300 transition-all  w-full md:w-[300px] h-[120px] lg:h-[280px] flex items-center justify-center cursor-pointer;
+  @apply bg-white/75 hover:bg-white rounded-[16px] shadow-custom_secondary hover:shadow-custom  duration-300 transition-all  w-full md:w-[300px] h-[150px] lg:h-[280px] flex items-center justify-center cursor-pointer;
 }
 
 .footer_icons,
@@ -36,10 +36,10 @@ body {
   @apply hover:animate-pulse cursor-pointer hover:scale-110 transition duration-150 text-xl 2xl:text-2xl;
 }
 .footer_icons {
-  @apply text-white hover:text-[#6AA0FC];
+  @apply text-white hover:text-link-400;
 }
 .footer_icons2 {
-  @apply text-secondary-800 hover:text-[#6AA0FC];
+  @apply text-secondary-800 hover:text-primary-800;
 }
 
 .about_slide {
