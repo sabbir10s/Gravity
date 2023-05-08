@@ -75,10 +75,10 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
               <Link target="_blank" to="https://www.linkedin.com/company/gravityltd/">
                 <FiLinkedin className="footer_icons2" />
               </Link>
-              <Link target="_blank" to="https://www.behance.net/gravity-ltd">
+              <Link target="_blank" to="https://dribbble.com/gravityltd">
                 <TfiDribbble className="footer_icons2" />
               </Link>
-              <Link target="_blank" to="https://dribbble.com/gravityltd">
+              <Link target="_blank" to="https://www.behance.net/gravity-ltd">
                 <RiBehanceLine className="footer_icons2" />
               </Link>
             </div>
