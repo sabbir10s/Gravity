@@ -75,7 +75,7 @@ const Booking = () => {
                   }
                   className={` py-3 px-10 text-[14px] lg:text-[20px] font-semibold rounded focus:outline-none ${
                     selectedTags.includes(tag)
-                      ? "bg-primary-600 text-white border-2 border-transparent"
+                      ? "bg-primary-800 hover:bg-primary-600 duration-300 text-white border-2 border-transparent"
                       : "tagButton bg-white text-black border-2 border-[#f0f0f0]"
                   }`}
                 >
