@@ -10,7 +10,7 @@ const VideoModal = ({ visible, handleCloseVideoModal }) => {
     return null;
   }
   return (
-    <div id="container" onClick={handleCloseModal} className="z-50 fixed inset-0 bg-opacity-30 backdrop-blur-sm  ">
+    <div id="container" onClick={handleCloseModal} className="z-[4000] fixed inset-0 bg-opacity-30 backdrop-blur-sm  ">
       <div className="w-full h-screen bg-secondary-800 flex items-center justify-center duration-700 transition-all">
         <div className="w-5/6">
           <video className="p-10" autoPlay loop controls>
