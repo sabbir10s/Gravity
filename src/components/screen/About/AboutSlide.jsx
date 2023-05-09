@@ -27,7 +27,7 @@ const AboutSlide = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 1,
+            slidesPerView: 4,
             spaceBetween: 40,
           },
           768: {
@@ -51,32 +51,32 @@ const AboutSlide = () => {
       >
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider1} alt="slider1" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider1} alt="slider1" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider2} alt="slider2" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider2} alt="slider2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider3} alt="slider3" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider3} alt="slider3" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider4} alt="slider1" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider4} alt="slider1" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider5} alt="slider2" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider5} alt="slider2" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="about_slide">
-            <img loading="lazy" className="w-full h-full object-fill object-center" src={slider6} alt="slider3" />
+            <img loading="lazy" className="w-full h-full object-cover object-center" src={slider6} alt="slider3" />
           </div>
         </SwiperSlide>
       </Swiper>

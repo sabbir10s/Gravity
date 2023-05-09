@@ -43,5 +43,5 @@ body {
 }
 
 .about_slide {
-  @apply w-[94%] mx-auto md:mx-0 md:w-full h-[430px] lg:h-[517px] 2xl:h-[700px];
+  @apply mx-auto md:mx-0 lg:w-full h-[220px] md:h-[320px]  lg:h-[400px] 2xl:h-[520px];
 }

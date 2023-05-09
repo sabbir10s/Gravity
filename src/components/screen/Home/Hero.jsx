@@ -19,7 +19,7 @@ const Hero = () => {
               Ideas Transformed Into{" "}
               <span className="inline-block md:block">
                 {" "}
-                <TypeAnimation sequence={["Masterpieces", 1000, "Perfection", 1000, "Masterwork", 1000]} repeat={Infinity} />
+                <TypeAnimation sequence={["Masterpieces", 1000, "Perfection", 1000, "Wonder", 1000]} repeat={Infinity} />
               </span>{" "}
             </h1>
 
