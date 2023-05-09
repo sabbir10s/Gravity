@@ -34,12 +34,4 @@ export const reviews = [
       profession: "CTO of Hmedia",
     },
   },
-  {
-    id: 5,
-    message: "If you're looking for a reliable and efficient digital agency, look no further. These guys are top-notch!",
-    client: {
-      name: "Nur Alom",
-      profession: "CEO of Nur Soft",
-    },
-  },
 ];
