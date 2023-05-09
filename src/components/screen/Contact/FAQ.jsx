@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { BiMinus } from "react-icons/bi";
 import { FiChevronDown } from "react-icons/fi";
 import axios from "axios";
-
 const FAQ = () => {
   const [openAns, setOpenAns] = useState(null);
   const [questions, setQuestions] = useState([]);
@@ -28,12 +27,13 @@ const FAQ = () => {
     }
     setOpenAns(open);
   };
+
   return (
     <div className="container py-[44px] lg:py-[144px]">
       <h2 className="text-[32px] md:text-[40px] lg:text-[64px] font-bold">
         Let’s explore the thoughts <br /> that are on your mind.
       </h2>
-      <div className="h-[7px] bg-primary-800 w-20 mb-[32px] lg:mb-[60px]"></div>
+      <div className="h-[7px] bg-primary-800 w-36 mb-[32px] lg:mb-[60px]"></div>
       {questions.map((question, open) => (
         <div key={question._id} className="py-[51px] border-t border-gray-200/70 ">
           <div onClick={() => handleOpenAns(open)} type="button" className="cursor-pointer w-full flex justify-between gap-6">

@@ -73,13 +73,13 @@ const Booking = () => {
                   onClick={() =>
                     selectedTags.includes(tag) ? setSelectedTags(selectedTags.filter((t) => t !== tag)) : setSelectedTags([...selectedTags, tag])
                   }
-                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-semibold rounded focus:outline-none ${
+                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-semibold rounded focus:outline-none border border-primary-800 ${
                     selectedTags.includes(tag)
-                      ? "bg-primary-600 text-white border-2 border-transparent"
-                      : "tagButton bg-white text-black border-2 border-[#f0f0f0]"
+                      ? "bg-primary-800 text-white"
+                      : "buttonStyle left bg-white text-secondary-800 hover:text-white"
                   }`}
                 >
-                  <span className="text">{tag}</span>
+                  {tag}
                 </button>
               ))}
             </div>
@@ -123,16 +123,16 @@ const Booking = () => {
           </div>
           <div className="hidden lg:block">
             <div>
-              <p className="uppercase text-[16px] text-secondary-800/50">Address</p>
-              <p className="mt-[10px] text-[20px] text-secondary-800">
+              <p className="uppercase text-[16px] 2xl:text-[20px] text-secondary-800/50">Address</p>
+              <p className="mt-[10px] text-[20px] 2xl:text-[24px] text-secondary-800">
                 Uttara, Sector- 4,
                 <br />
                 Dhaka, Bangladesh
               </p>
             </div>
             <div className="mt-[60px]">
-              <p className="uppercase text-[16px] text-secondary-800/50">Prefer to talk?</p>
-              <p className="mt-[10px] text-[20px] text-secondary-800">09638-945755</p>
+              <p className="uppercase text-[16px] 2xl:text-[20px] text-secondary-800/50">Prefer to talk?</p>
+              <p className="mt-[10px] text-[20px] 2xl:text-[24px] text-secondary-800">09638-945755</p>
             </div>
           </div>
         </div>
