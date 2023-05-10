@@ -9,7 +9,7 @@ const Vision = () => {
                     className="pr-0 lg:pr-3 pt-[52px] lg:pt-[100px] order-2 lg:order-none lg:w-2/3">
                     <h2 className="text-4xl md:text-5xl lg:text-[64px] font-semibold">Vision</h2>
                     <div
-                        className="w-14 lg:w-24 h-[7px] mb-[30px] lg:mb-[50px] mt-[9px] bg-primary-800"></div>
+                        className="w-14 lg:w-24 h-[7px] mb-[30px] lg:mb-[50px] mt-[5px] lg:mt-[9px] bg-primary-800"></div>
                     <p
                         className="text-base md:text-[20px] lg:text-[24px] xl:text-[22px] 2xl:text-[32px] md:leading-relaxed lg:leading-[48px] mt-[24px]">
                         Gravity is a dynamic digital agency that specializes in delivering cutting-edge
