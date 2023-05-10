@@ -40,7 +40,9 @@ const FAQ = () => {
             <h2 className="text-[24px] lg:text-[32px] font-semibold text-secondary-800">{question.question}</h2>
             <span>{openAns === open ? <BiMinus className="text-2xl" /> : <FiChevronDown className="text-2xl" />}</span>
           </div>
-          <div className={`overflow-hidden transition-all duration-500 ease-in-out ${openAns === open ? 'h-auto mt-[26px] lg:mt-[29px]' : 'h-0 mt-0'} `}>
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${openAns === open ? "h-auto mt-[26px] lg:mt-[29px]" : "h-0 mt-0"} `}
+          >
             <p className="text-secondary-800 text-[16px] lg:text-[24px]">{question.answer}</p>
           </div>
         </div>
