@@ -4,6 +4,7 @@ import "../../styles/Menubar.css";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { RiBehanceLine } from "react-icons/ri";
 import { TfiDribbble } from "react-icons/tfi";
+import ActiveLink from "../theme/ActiveLink";
 const Menubar = ({ visible, handleCloseMenubar }) => {
   const handleCloseModal = (e) => {
     if (e.target.id === "container") handleCloseMenubar();
@@ -20,7 +21,7 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
           <div className="w-full flex justify-end">
             <button
               onClick={handleCloseMenubar}
-              className="mt-10 mr-10 lg:m-4 bg-primary-600 hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center duration-300"
+              className="mt-10 mr-10 lg:m-4 bg-primary-800 hover:bg-secondary-800 w-10 h-10 rounded-full flex justify-center items-center duration-300"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,27 +38,25 @@ const Menubar = ({ visible, handleCloseMenubar }) => {
 
           <div className="mx-auto md:mx-0 w-1/2">
             <ul className="flex flex-col gap-[24px] lg:gap-[30px] text-secondary-800 font-medium text-[24px] lg:text-[32px] ">
-              <li onClick={handleCloseMenubar} className="flip-animate link">
-                <Link to="/">
-                  <span data-hover="Home">Home</span>
-                </Link>
+              <li onClick={handleCloseMenubar}>
+              <ActiveLink to="/"> <span data-hover="Home">Home</span></ActiveLink>
               </li>
-              <li onClick={handleCloseMenubar} className="flip-animate link">
-                <Link to="/service">
+              <li onClick={handleCloseMenubar}>
+                <ActiveLink to="/service">
                   <span data-hover="Service">Service</span>
-                </Link>
+                </ActiveLink>
               </li>
-              <li onClick={handleCloseMenubar} className="flip-animate link">
+              <li onClick={handleCloseMenubar}>
                 {" "}
-                <Link to="/about">
+                <ActiveLink to="/about">
                   <span data-hover="About Us">About Us</span>
-                </Link>
+                </ActiveLink>
               </li>
-              <li onClick={handleCloseMenubar} className="flip-animate link">
+              <li onClick={handleCloseMenubar}>
                 {" "}
-                <Link to="/contact">
+                <ActiveLink to="/contact">
                   <span data-hover="Contact Us">Contact Us</span>
-                </Link>
+                </ActiveLink>
               </li>
             </ul>
           </div>
