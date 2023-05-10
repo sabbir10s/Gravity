@@ -19,7 +19,7 @@ export const reviews = [
   {
     id: 3,
     message:
-      "Gravity exceeded my expectations with their exceptional branding services. Working with them was a pleasure and I highly recommend them.",
+      "Gravity delivered a standout website with added features that impressed internal stakeholders and external users alike. Collaboration was easy.",
     client: {
       name: "jheamuel Panuelo",
       profession: "CTO of Streamlare",
@@ -28,9 +28,9 @@ export const reviews = [
   {
     id: 4,
     message:
-      "Gravity exceeded my expectations with their exceptional branding services. Working with them was a pleasure and I highly recommend them.",
+      "Gravity delivered professional, flexible, and technically skilled service, generating significant website traffic & attracting potential customers.",
     client: {
-      name: "Hamom",
+      name: "Ihaboush",
       profession: "CTO of Hmedia",
     },
   },
