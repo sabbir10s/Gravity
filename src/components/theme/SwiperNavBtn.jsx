@@ -6,7 +6,7 @@ const SwiperNavBtn = () => {
   const swiper = useSwiper();
 
   return (
-    <div className=" space-x-1 absolute bottom-3 right-2 z-10 bg-[#FAFCFE]">
+    <div className=" space-x-1 absolute bottom-0 right-2 z-10 bg-[#FAFCFE]">
       <button
         className={` group py-1 px-4 rounded-3xl `}
         onClick={() => swiper.slidePrev()}
