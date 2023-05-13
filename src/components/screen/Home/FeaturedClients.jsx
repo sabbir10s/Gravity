@@ -2,13 +2,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { trustedPartners } from "../../../data/trusted_partners";
+
 const FeaturedClients = () => {
+  
   useEffect(() => {
     AOS.init({
       duration: 1200,
     });
     AOS.refresh();
   }, []);
+
   return (
     <div className="bg-[#fafcfe]">
       <div className="py-[60px] lg:py-[144px] container">

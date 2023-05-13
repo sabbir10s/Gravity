@@ -27,8 +27,10 @@ export const reviews = [
   },
   {
     id: 4,
+    // messages:
+    //   "Gravity delivered professional, flexible, and technically skilled service, generating significant website traffic & attracting potential customers.",
     message:
-      "Gravity delivered professional, flexible, and technically skilled service, generating significant website traffic & attracting potential customers.",
+      "Gravity's exceptional and highly proficient services led to a significant increase in website traffic and attracted many potential customers.",
     client: {
       name: "Ihaboush",
       profession: "CTO of Hmedia",
