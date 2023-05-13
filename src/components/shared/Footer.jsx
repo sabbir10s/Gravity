@@ -27,7 +27,7 @@ const Footer = () => {
                 <h2 className="text-[24px] lg:text-[76px] text-white group-hover:text-link-400 font-semibold duration-300 transition">
                   Let’s connect!
                 </h2>
-                <div className="bg-white w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
+                <div className="bg-link-400 w-0 group-hover:w-full duration-300 h-[1px] mx-auto"></div>
               </button>
             </Link>
           </div>

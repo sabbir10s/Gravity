@@ -66,8 +66,8 @@ const Review = () => {
             >
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
-                  <div className="h-[200px] lg:h-[350px] flex flex-col justify-between">
-                    <p className=" font-medium lg:font-normal p-2 text-[16px] md:text-[20px] lg:text-[30px]">
+                  <div className="h-[200px] lg:h-[320px] flex flex-col justify-between">
+                    <p className=" font-medium lg:font-normal p-2 text-[16px] md:text-[20px] lg:text-[28px]">
                       <q>{review.message}</q>
                     </p>
                     <div className="flex items-center justify-between mt-[20px] md:mt-[26px] lg:mt-[40px] ml-2">

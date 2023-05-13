@@ -56,7 +56,7 @@ export default {
         800: "#5a5a5a",
       },
       link: {
-        400: "#86b2ff",
+        400: "#6AA0FC",
       },
     },
   },

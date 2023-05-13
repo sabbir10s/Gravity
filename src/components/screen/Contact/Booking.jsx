@@ -73,10 +73,8 @@ const Booking = () => {
                   onClick={() =>
                     selectedTags.includes(tag) ? setSelectedTags(selectedTags.filter((t) => t !== tag)) : setSelectedTags([...selectedTags, tag])
                   }
-                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-semibold rounded focus:outline-none border border-primary-800 ${
-                    selectedTags.includes(tag)
-                      ? "bg-primary-800 text-white"
-                      : "buttonStyle left bg-white text-secondary-800 hover:text-white"
+                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-medium rounded focus:outline-none transition duration-200 border ${
+                    selectedTags.includes(tag) ? "bg-primary-800 text-white" : "buttonStyle left bg-white text-secondary-800 hover:text-white"
                   }`}
                 >
                   {tag}
@@ -115,7 +113,7 @@ const Booking = () => {
                   placeholder="What can you tell us about it?"
                   required
                 />
-                <button className=" w-full lg:w-fit mt-[50px] text-[20px] bg-primary-800 hover:bg-primary-600 rounded shadow-custom cursor-pointer duration-300 transition-all ease-in-out text-white px-[80px] py-[20px]">
+                <button className=" w-full lg:w-fit mt-[50px] text-[20px] bg-primary-800 hover:bg-primary-600 rounded shadow-custom cursor-pointer duration-300 transition-all ease-in-out text-white px-[80px] py-4">
                   Send a Request
                 </button>
               </form>
