@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../../../styles/Booking.css";
-import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import "../../../styles/Booking.css";
 
 const Booking = () => {
   const tags = ["Strategy", "Design", "Development", "Marketing"];
@@ -10,6 +10,8 @@ const Booking = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
+
+  console.log("selectedTags", selectedTags);
 
   let timerInterval;
   const handleSubmit = (e) => {
@@ -60,12 +62,14 @@ const Booking = () => {
     setMessage("");
     navigate("/");
   };
+  
   return (
     <div className="bg-white">
       <div className="container py-[44px] lg:py-[144px]">
         <div className="lg:grid grid-cols-3 lg:gap-20">
           <div className="lg:col-span-2">
             <p className="uppercase text-[16px] lg:text-[20px] text-secondary-800">Pick what you are interested in</p>
+            
             <div className="mt-[24px] flex flex-wrap gap-4 lg:gap-8">
               {tags.map((tag) => (
                 <button
@@ -73,7 +77,7 @@ const Booking = () => {
                   onClick={() =>
                     selectedTags.includes(tag) ? setSelectedTags(selectedTags.filter((t) => t !== tag)) : setSelectedTags([...selectedTags, tag])
                   }
-                  className={` py-3 px-10 text-[14px] lg:text-[20px] font-medium rounded focus:outline-none transition duration-200 border ${
+                  className={`py-3 px-10 text-[14px] lg:text-[20px] font-medium rounded focus:outline-none transition duration-200 border ${
                     selectedTags.includes(tag) ? "bg-primary-800 text-white" : "buttonStyle left bg-white text-secondary-800 hover:text-white"
                   }`}
                 >
@@ -81,6 +85,7 @@ const Booking = () => {
                 </button>
               ))}
             </div>
+
             <div className="mt-[50px]">
               <form onSubmit={handleSubmit}>
                 <input
