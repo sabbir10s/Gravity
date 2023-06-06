@@ -19,7 +19,7 @@ export const serviceData = [
     details_desc:
       "Designing User-Centered Digital Products: From Research to Launch. At Gravity, we offer customized design solutions that transform your ideas into visually stunning and user-friendly digital products. Let us help you create a product that meets your unique needs and exceeds your expectations.",
     image: `${serviceImg2}`,
-    key_services: ["User Research & Testing", "UX Design", "Interactive Prototype", "Video Production", "Visual Design", "Motion Design"],
+    key_services: ["User Research & Testing", "UX Design", "Interactive Prototype", "Design Systems", "Visual Design", "Motion Design"],
     isReverse: false,
   },
   {
