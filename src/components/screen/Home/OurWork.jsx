@@ -40,7 +40,7 @@ const OurWork = () => {
                 <li>Interactive Prototype</li>
               </ul>
               <ul className="disk ml-4 lg:ml-8 text-secondary-800/80">
-                <li>Video Production</li>
+                <li>Design Systems</li>
                 <li>Visual Design</li>
                 <li>Motion Design</li>
               </ul>

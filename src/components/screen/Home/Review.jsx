@@ -42,7 +42,7 @@ const Review = () => {
     <div className="bg-[#fafcfe]">
       <div className="container relative py-[60px] lg:py-[144px] ">
         <div className="lg:flex gap-10 justify-between">
-          <h1 data-aos="fade-up" className="lg:w-1/3 text-secondary-800 text-[32px] lg:text-[64px] font-semibold">
+          <h1 data-aos="fade-up" className="lg:w-2/3 text-secondary-800 text-[32px] lg:text-[64px] font-semibold">
             What others are saying
           </h1>
           <div
@@ -66,11 +66,13 @@ const Review = () => {
             >
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
-                  <div className="h-full flex flex-col justify-between">
-                    <p className=" font-medium lg:font-normal p-2 text-[16px] md:text-[20px] lg:text-[28px]">
-                      <q>{review.message}</q>
-                    </p>
-                    <div className="flex items-center justify-between mt-[20px] md:mt-[26px] lg:mt-[40px] ml-2">
+                  <div className="flex flex-col justify-between h-full">
+                    <div>
+                      <p className="font-medium lg:font-normal p-2 text-[16px] md:text-[20px] xl:text-[28px] h-[170px] lg:h-[230px]">
+                        <q>{review.message}</q>
+                      </p>
+                    </div>
+                    <div className="pl-4">
                       <div>
                         <h3 className="font-semibold text-[16px] md:text-[20px] lg:text-[24px]">{review?.client?.name},</h3>
                         <p className="text-primary-800 font-medium text-[14px] lg:text-[20px]">{review?.client?.profession}</p>
