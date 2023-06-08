@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import { BiMinus } from "react-icons/bi";
 import { FiChevronDown } from "react-icons/fi";
 import axios from "axios";
+
 const FAQ = () => {
   const [openAns, setOpenAns] = useState(null);
   const [questions, setQuestions] = useState([]);
 
   const fetchData = () => {
     axios
-      .get("/faq.json")
+      .get("https://mocki.io/v1/af08530e-0341-4de5-b684-1beaf3477b7d")
       .then((response) => {
         setQuestions(response.data);
       })
